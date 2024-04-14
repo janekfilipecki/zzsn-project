@@ -1,4 +1,3 @@
-import sys
 import torch
 from diffusers import AutoPipelineForText2Image
 
