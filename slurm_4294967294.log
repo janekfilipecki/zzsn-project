@@ -1,0 +1,46 @@
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Fetching 15 files:   7%|▋         | 1/15 [00:00<00:04,  3.11it/s]Fetching 15 files:  27%|██▋       | 4/15 [00:13<00:40,  3.66s/it]Fetching 15 files:  80%|████████  | 12/15 [00:26<00:06,  2.23s/it]
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgfilipeckijan/zzsn-project/pipeline.py", line 4, in <module>
+    pipeline_text2image = AutoPipelineForText2Image.from_pretrained(
+  File "/net/people/plgrid/plgfilipeckijan/.local/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 119, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/net/people/plgrid/plgfilipeckijan/.local/lib/python3.9/site-packages/diffusers/pipelines/auto_pipeline.py", line 335, in from_pretrained
+    return text_2_image_cls.from_pretrained(pretrained_model_or_path, **kwargs)
+  File "/net/people/plgrid/plgfilipeckijan/.local/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 119, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/net/people/plgrid/plgfilipeckijan/.local/lib/python3.9/site-packages/diffusers/pipelines/pipeline_utils.py", line 671, in from_pretrained
+    cached_folder = cls.download(
+  File "/net/people/plgrid/plgfilipeckijan/.local/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 119, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/net/people/plgrid/plgfilipeckijan/.local/lib/python3.9/site-packages/diffusers/pipelines/pipeline_utils.py", line 1406, in download
+    cached_folder = snapshot_download(
+  File "/net/people/plgrid/plgfilipeckijan/.local/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 119, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/net/people/plgrid/plgfilipeckijan/.local/lib/python3.9/site-packages/huggingface_hub/_snapshot_download.py", line 316, in snapshot_download
+    thread_map(
+  File "/net/software/v1/software/Miniconda3/23.3.1-0/lib/python3.9/site-packages/tqdm/contrib/concurrent.py", line 69, in thread_map
+    return _executor_map(ThreadPoolExecutor, fn, *iterables, **tqdm_kwargs)
+  File "/net/software/v1/software/Miniconda3/23.3.1-0/lib/python3.9/site-packages/tqdm/contrib/concurrent.py", line 51, in _executor_map
+    return list(tqdm_class(ex.map(fn, *iterables, chunksize=chunksize), **kwargs))
+  File "/net/software/v1/software/Miniconda3/23.3.1-0/lib/python3.9/site-packages/tqdm/std.py", line 1178, in __iter__
+    for obj in iterable:
+  File "/net/software/v1/software/Miniconda3/23.3.1-0/lib/python3.9/concurrent/futures/_base.py", line 609, in result_iterator
+    yield fs.pop().result()
+  File "/net/software/v1/software/Miniconda3/23.3.1-0/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/net/software/v1/software/Miniconda3/23.3.1-0/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/net/software/v1/software/Miniconda3/23.3.1-0/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/net/people/plgrid/plgfilipeckijan/.local/lib/python3.9/site-packages/huggingface_hub/_snapshot_download.py", line 290, in _inner_hf_hub_download
+    return hf_hub_download(
+  File "/net/people/plgrid/plgfilipeckijan/.local/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 119, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/net/people/plgrid/plgfilipeckijan/.local/lib/python3.9/site
