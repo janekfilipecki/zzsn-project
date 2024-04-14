@@ -10,4 +10,3 @@
 #SBATCH --output=slurm_%a.log
 
 python $1
-W
