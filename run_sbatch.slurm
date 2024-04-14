@@ -2,10 +2,10 @@
 
 #SBATCH --job-name=sd_generate_test
 #SBATCH --partition=plgrid-gpu-a100
-#SBATCH --time=360
+#SBATCH --time=10
 #SBATCH --cpus-per-task=4
 #SBATCH --gres=gpu:1
-#SBATCH --mem=40G
+#SBATCH --mem=20G
 #SBATCH --nodes=1
 #SBATCH --output=slurm_%a.log
 
