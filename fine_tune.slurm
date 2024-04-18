@@ -7,22 +7,32 @@
 #SBATCH --gres=gpu:1
 #SBATCH --mem=40G
 #SBATCH --nodes=1
-#SBATCH --output=train_dreambooth.out
+#SBATCH --output=./logs/train_dreambooth_%j_%a.out
 
 export MODEL_NAME="CompVis/stable-diffusion-v1-4"
-export INSTANCE_DIR="path_to_training_images"
-export OUTPUT_DIR="path_to_saved_model"
+export INSTANCE_DIR="./dreambooth_train_images"
+export CLASS_DIR="./dreambooth_class_images"
+export OUTPUT_DIR="./dreambooth_test_model"
+export HF_HOME="/net/tscratch/people/plgfilipeckijan/.cache/huggingface"
 
-# Run the training script
-accelerate launch train_dreambooth.py \
-  --pretrained_model_name_or_path=$MODEL_NAME \
+accelerate launch \
+  --num_processes=1 \
+  --num_machines=1 \
+  --mixed_precision='no' \
+  --dynamo_backend='no' \
+  train_dreambooth.py \
+  --pretrained_model_name_or_path=$MODEL_NAME  \
   --instance_data_dir=$INSTANCE_DIR \
+  --class_data_dir=$CLASS_DIR \
   --output_dir=$OUTPUT_DIR \
-  --instance_prompt="a photo of sks dog" \
+  --with_prior_preservation --prior_loss_weight=1.0 \
+  --instance_prompt="A picture of sks dog" \
+  --class_prompt="A picture of a dog" \
   --resolution=512 \
   --train_batch_size=1 \
   --gradient_accumulation_steps=1 \
   --learning_rate=5e-6 \
   --lr_scheduler="constant" \
   --lr_warmup_steps=0 \
-  --max_train_steps=400
+  --num_class_images=200 \
+  --max_train_steps=800

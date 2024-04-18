@@ -7,6 +7,6 @@
 #SBATCH --gres=gpu:1
 #SBATCH --mem=40G
 #SBATCH --nodes=1
-#SBATCH --output=slurm_%a.log
+#SBATCH --output=./logs/generate_%j_%a.log
 
 python $1

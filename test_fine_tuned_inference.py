@@ -1,11 +1,10 @@
 import torch
-from diffusers import AutoPipelineForText2Image
+from diffusers import StableDiffusionPipeline
 
-pipeline_text2image = AutoPipelineForText2Image.from_pretrained(
-    "runwayml/stable-diffusion-v1-5", torch_dtype=torch.float16, variant="fp16", use_safetensors=True
-).to("cuda")
+model_id = "./dreambooth_test_model"
+pipe = StableDiffusionPipeline.from_pretrained(model_id, torch_dtype=torch.float16).to("cuda")
 
-prompt = "A very stupid looking cat with a broom trying to catch a bird wearing a baseball cap"
-image = pipeline_text2image(prompt=prompt).images[0]
+prompt = "A picture of sks dog with red background"
+image = pipe(prompt, num_inference_steps=50, guidance_scale=7.5).images[0]
 
-image.save("sd_test.jpg")
+image.save("example_fine_tuned_image.jpg")
