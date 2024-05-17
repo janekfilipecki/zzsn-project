@@ -1,0 +1,24 @@
+05/17/2024 15:57:34 - INFO - __main__ - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+
+Mixed precision type: no
+
+Fetching 19 files:   0%|          | 0/19 [00:00<?, ?it/s]Fetching 19 files:  11%|█         | 2/19 [00:00<00:02,  6.07it/s]Fetching 19 files:  21%|██        | 4/19 [00:18<01:20,  5.38s/it]Fetching 19 files:  32%|███▏      | 6/19 [01:26<04:00, 18.53s/it]Fetching 19 files:  84%|████████▍ | 16/19 [04:08<00:50, 16.71s/it]Fetching 19 files: 100%|██████████| 19/19 [04:08<00:00, 13.06s/it]
+{'feature_extractor', 'image_encoder'} was not found in config. Values will be initialized to default values.
+Keyword arguments {'safety_checker': None} are not expected by StableDiffusionXLPipeline and will be ignored.
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loaded tokenizer_2 as CLIPTokenizer from `tokenizer_2` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loading pipeline components...:  14%|█▍        | 1/7 [00:00<00:01,  4.65it/s]Loaded tokenizer as CLIPTokenizer from `tokenizer` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+{'rescale_betas_zero_snr', 'sigma_min', 'sigma_max', 'timestep_type'} was not found in config. Values will be initialized to default values.
+Loaded scheduler as EulerDiscreteScheduler from `scheduler` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loading pipeline components...:  43%|████▎     | 3/7 [00:00<00:00,  7.94it/s]Loaded text_encoder as CLIPTextModel from `text_encoder` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loading pipeline components...:  57%|█████▋    | 4/7 [00:00<00:00,  4.11it/s]{'latents_std', 'latents_mean'} was not found in config. Values will be initialized to default values.
+Loaded vae as AutoencoderKL from `vae` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loading pipeline components...:  71%|███████▏  | 5/7 [00:01<00:00,  3.77it/s]Loaded text_encoder_2 as CLIPTextModelWithProjection from `text_encoder_2` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loading pipeline components...:  86%|████████▌ | 6/7 [00:04<00:01,  1.09s/it]{'attention_type', 'reverse_transformer_layers_per_block', 'dropout'} was not found in config. Values will be initialized to default values.
+Loaded unet as UNet2DConditionModel from `unet` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loading pipeline components...: 100%|██████████| 7/7 [00:11<00:00,  3.15s/it]Loading pipeline components...: 100%|██████████| 7/7 [00:11<00:00,  1.67s/it]
+05/17/2024 16:01:56 - INFO - __main__ - Number of class images to sample: 200.
+Generating class images:   0%|          | 0/50 [00:00<?, ?it/s]Generating class images:   2%|▏         | 1/50 [00:22<18:15, 22.35s/it]Generating class images:   4%|▍         | 2/50 [00:43<17:06, 21.39s/it]Generating class images:   6%|▌         | 3/50 [01:03<16:32, 21.11s/it]Generating class images:   8%|▊         | 4/50 [01:24<16:05, 20.98s/it]Generating class images:  10%|█         | 5/50 [01:45<15:41, 20.92s/it]Generating class images:  12%|█▏        | 6/50 [02:06<15:18, 20.88s/it]Generating class images:  14%|█▍        | 7/50 [02:27<14:56, 20.86s/it]Generating class images:  16%|█▌        | 8/50 [02:47<14:35, 20.84s/it]
