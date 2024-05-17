@@ -1,0 +1,41 @@
+Fetching 19 files:   0%|          | 0/19 [00:00<?, ?it/s]Fetching 19 files:  32%|███▏      | 6/19 [06:04<13:10, 60.80s/it]Fetching 19 files:  79%|███████▉  | 15/19 [06:13<01:39, 24.92s/it]
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgfilipeckijan/zzsn-project/generate_sdxl.py", line 11, in <module>
+    pipe = DiffusionPipeline.from_pretrained(pretrained_model_name_or_path, torch_dtype=torch.float16)
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 119, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/diffusers/pipelines/pipeline_utils.py", line 698, in from_pretrained
+    cached_folder = cls.download(
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 119, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/diffusers/pipelines/pipeline_utils.py", line 1497, in download
+    cached_folder = snapshot_download(
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 119, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/huggingface_hub/_snapshot_download.py", line 316, in snapshot_download
+    thread_map(
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/tqdm/contrib/concurrent.py", line 69, in thread_map
+    return _executor_map(ThreadPoolExecutor, fn, *iterables, **tqdm_kwargs)
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/tqdm/contrib/concurrent.py", line 51, in _executor_map
+    return list(tqdm_class(ex.map(fn, *iterables, chunksize=chunksize), **kwargs))
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/tqdm/std.py", line 1178, in __iter__
+    for obj in iterable:
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/concurrent/futures/_base.py", line 609, in result_iterator
+    yield fs.pop().result()
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/huggingface_hub/_snapshot_download.py", line 290, in _inner_hf_hub_download
+    return hf_hub_download(
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 119, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 1492, in hf_hub_download
+    http_get(
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 538, in http_get
+    temp_file.write(chunk)
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/tempfile.py", line 478, in func_wrapper
+    return func(*args, **kwargs)
+OSError: [Errno 122] Disk quota exceeded

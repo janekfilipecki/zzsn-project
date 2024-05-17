@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgfilipeckijan/zzsn-project/test_fine_tuned_inference.py", line 5, in <module>
+    pipe = StableDiffusionPipeline.from_pretrained(model_id, torch_dtype=torch.float16).to("cuda")
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 119, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/diffusers/pipelines/pipeline_utils.py", line 719, in from_pretrained
+    config_dict = cls.load_config(cached_folder)
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 119, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/diffusers/configuration_utils.py", line 375, in load_config
+    raise EnvironmentError(
+OSError: Error no file named model_index.json found in directory ./models/dreambooth_lora_sdxl_dog6.

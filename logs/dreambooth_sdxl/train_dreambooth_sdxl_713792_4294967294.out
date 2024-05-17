@@ -1,0 +1,66 @@
+05/17/2024 17:39:04 - INFO - __main__ - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+
+Mixed precision type: no
+
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/huggingface_hub/utils/_errors.py", line 304, in hf_raise_for_status
+    response.raise_for_status()
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix/resolve/main/tokenizer/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 119, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 1261, in hf_hub_download
+    metadata = get_hf_file_metadata(
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 119, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 1674, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 369, in _request_wrapper
+    response = _request_wrapper(
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 393, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/huggingface_hub/utils/_errors.py", line 315, in hf_raise_for_status
+    raise EntryNotFoundError(message, response) from e
+huggingface_hub.utils._errors.EntryNotFoundError: 404 Client Error. (Request ID: Root=1-66477a19-534c07ad16574d5a648e2e99;ed1bbe66-e7ed-4294-a46f-3b5e8da24459)
+
+Entry Not Found for url: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix/resolve/main/tokenizer/config.json.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgfilipeckijan/zzsn-project/train_dreambooth_sdxl.py", line 1443, in <module>
+    main(args)
+  File "/net/tscratch/people/plgfilipeckijan/zzsn-project/train_dreambooth_sdxl.py", line 920, in main
+    tokenizer = AutoTokenizer.from_pretrained(
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/transformers/models/auto/tokenization_auto.py", line 794, in from_pretrained
+    config = AutoConfig.from_pretrained(
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/transformers/models/auto/configuration_auto.py", line 1138, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/transformers/configuration_utils.py", line 631, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/transformers/configuration_utils.py", line 686, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/transformers/utils/hub.py", line 452, in cached_file
+    raise EnvironmentError(
+OSError: madebyollin/sdxl-vae-fp16-fix does not appear to have a file named tokenizer/config.json. Checkout 'https://huggingface.co/madebyollin/sdxl-vae-fp16-fix/main' for available files.
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/bin/accelerate", line 8, in <module>
+    sys.exit(main())
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/accelerate/commands/accelerate_cli.py", line 46, in main
+    args.func(args)
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/accelerate/commands/launch.py", line 1075, in launch_command
+    simple_launcher(args)
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/accelerate/commands/launch.py", line 681, in simple_launcher
+    raise subprocess.CalledProcessError(returncode=process.returncode, cmd=cmd)
+subprocess.CalledProcessError: Command '['/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/bin/python', 'train_dreambooth_sdxl.py', '--pretrained_model_name_or_path=stabilityai/stable-diffusion-xl-base-1.0', '--instance_data_dir=./dataset/dreambooth-main/dataset/dog6', '--class_data_dir=./dataset/dreambooth_generated/dog', '--output_dir=./models/dreambooth_sdxl_dog6', '--pretrained_model_name_or_path=madebyollin/sdxl-vae-fp16-fix', '--with_prior_preservation', '--prior_loss_weight=1.0', '--instance_prompt=a sks dog', '--class_prompt=a dog', '--resolution=512', '--train_batch_size=1', '--gradient_accumulation_steps=1', '--learning_rate=5e-6', '--lr_scheduler=constant', '--lr_warmup_steps=0', '--num_class_images=200', '--max_train_steps=800', '--logging_dir=./logs/tensorboard_logs', '--report_to=tensorboard']' returned non-zero exit status 1.
