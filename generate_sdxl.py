@@ -13,8 +13,8 @@ pipe = pipe.to("cuda")
 pipe.load_lora_weights(lora_weights_path)
 
 # Define the prompt and the random generator
-prompt = "a photo of sks dog"
+prompt = "sks dog in a bucket"
 
 # Perform inference with the base pipeline
 image = pipe(prompt=prompt, num_inference_steps=25).images[0]
-image.save("generated/test_sdxl_hopefully_fixed.png")
+image.save("generated/test_sdxl_another.png")
