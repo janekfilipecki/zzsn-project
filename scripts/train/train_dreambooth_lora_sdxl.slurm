@@ -20,8 +20,12 @@ export HF_HOME="/net/tscratch/people/plgas2000/.cache/huggingface"
 export LOG_DIR="./logs/tensorboard_logs"
 export VAE_PATH="madebyollin/sdxl-vae-fp16-fix"
 
+<<<<<<< HEAD:train_dreambooth_lora_sdxl.slurm
 accelerate launch train_dreambooth_lora_sdxl.py \
 accelerate launch train_dreambooth_lora_sdxl.py \
+=======
+accelerate launch scripts/train/train_dreambooth_lora_sdxl.py \
+>>>>>>> origin/main:scripts/train/train_dreambooth_lora_sdxl.slurm
   --pretrained_model_name_or_path=$MODEL_NAME  \
   --instance_data_dir=$INSTANCE_DIR \
   --class_data_dir=$CLASS_DIR \

@@ -7,31 +7,27 @@
 #SBATCH --gres=gpu:1
 #SBATCH --mem=40G
 #SBATCH --nodes=1
-#SBATCH --output=./logs/dreambooth_sdxl/train_dreambooth_sdxl_%j_%a.out
+#SBATCH --output=./logs/train_dreambooth_%j_%a.out
 
-export MODEL_NAME="stabilityai/stable-diffusion-xl-base-1.0"
-export INSTANCE_DIR="./dataset/dreambooth-main/dataset/dog5"
-export CLASS_DIR="./dataset/dreambooth_generated/dog"
-export OUTPUT_DIR="./models/dreambooth_sdxl_dog5"
-export HF_HOME="/net/tscratch/people/plgas2000/.cache/huggingface"
-export LOG_DIR="./logs/tensorboard_logs"
-export VAE_PATH="stabilityai/sdxl-vae"
-
+export MODEL_NAME="CompVis/stable-diffusion-v1-4"
+export INSTANCE_DIR="./dreambooth_train_images"
+export CLASS_DIR="./dreambooth_class_images"
+export OUTPUT_DIR="./dreambooth_test_model"
+export HF_HOME="/net/tscratch/people/plgfilipeckijan/.cache/huggingface"
 
 accelerate launch \
   --num_processes=1 \
   --num_machines=1 \
   --mixed_precision='no' \
   --dynamo_backend='no' \
-  train_dreambooth_sdxl.py \
+  scripts/train/train_dreambooth.py \
   --pretrained_model_name_or_path=$MODEL_NAME  \
   --instance_data_dir=$INSTANCE_DIR \
   --class_data_dir=$CLASS_DIR \
   --output_dir=$OUTPUT_DIR \
-  --pretrained_model_name_or_path=$VAE_PATH \
   --with_prior_preservation --prior_loss_weight=1.0 \
-  --instance_prompt="a xyz5 dog" \
-  --class_prompt="a dog" \
+  --instance_prompt="A picture of sks dog" \
+  --class_prompt="A picture of a dog" \
   --resolution=512 \
   --train_batch_size=1 \
   --gradient_accumulation_steps=1 \
@@ -39,6 +35,4 @@ accelerate launch \
   --lr_scheduler="constant" \
   --lr_warmup_steps=0 \
   --num_class_images=200 \
-  --max_train_steps=800 \
-  --logging_dir=$LOG_DIR \
-  --report_to="tensorboard"
+  --max_train_steps=800
