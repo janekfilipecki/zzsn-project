@@ -1,7 +1,7 @@
 import torch
 from diffusers import StableDiffusionPipeline
 
-model_id = "./dreambooth_test_model"
+model_id = "../../models/dreambooth_test_model"
 pipe = StableDiffusionPipeline.from_pretrained(model_id, torch_dtype=torch.float16).to("cuda")
 
 prompt = "A picture of sks dog with red background"
