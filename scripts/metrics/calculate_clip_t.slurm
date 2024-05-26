@@ -15,7 +15,7 @@ export PROMPT_FILE="./prompts/dog6.txt"
 export LOG_DIR="./logs/metrics_logs"
 export HF_HOME="/net/tscratch/people/plgfilipeckijan/.cache/huggingface"
 
-python calculate_clip_t.py \
+python scripts/metrics/calculate_clip_t.py \
     --generated_dir=$GENERATED_DIR \
     --prompt_file=$PROMPT_FILE \
     --model_name=$MODEL_NAME \
