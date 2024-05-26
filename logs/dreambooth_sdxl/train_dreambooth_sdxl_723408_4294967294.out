@@ -1,0 +1,21 @@
+There was a problem when trying to write in your cache folder (/net/tscratch/people/plgfilipeckijan/.cache/huggingface/hub). You should set the environment variable TRANSFORMERS_CACHE to a writable directory.
+There was a problem when trying to write in your cache folder (/net/tscratch/people/plgfilipeckijan/.cache/huggingface/hub). You should set the environment variable TRANSFORMERS_CACHE to a writable directory.
+There was a problem when trying to write in your cache folder (/net/tscratch/people/plgfilipeckijan/.cache/huggingface/hub). Please, ensure the directory exists and can be written to.
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgas2000/zzsn-project/train_dreambooth_sdxl.py", line 66, in <module>
+    check_min_version("0.28.0.dev0")
+  File "/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/lib/python3.12/site-packages/diffusers/utils/__init__.py", line 124, in check_min_version
+    raise ImportError(error_message)
+ImportError: This example requires a source install from HuggingFace diffusers (see `https://huggingface.co/docs/diffusers/installation#install-from-source`), but the version found is 0.27.2.
+
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/bin/accelerate", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/lib/python3.12/site-packages/accelerate/commands/accelerate_cli.py", line 46, in main
+    args.func(args)
+  File "/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/lib/python3.12/site-packages/accelerate/commands/launch.py", line 1075, in launch_command
+    simple_launcher(args)
+  File "/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/lib/python3.12/site-packages/accelerate/commands/launch.py", line 681, in simple_launcher
+    raise subprocess.CalledProcessError(returncode=process.returncode, cmd=cmd)
+subprocess.CalledProcessError: Command '['/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/bin/python', 'train_dreambooth_sdxl.py', '--pretrained_model_name_or_path=stabilityai/stable-diffusion-xl-base-1.0', '--instance_data_dir=./dataset/dreambooth-main/dataset/dog6', '--class_data_dir=./dataset/dreambooth_generated/dog', '--output_dir=./models/dreambooth_sdxl_dog6', '--pretrained_model_name_or_path=stabilityai/sdxl-vae', '--with_prior_preservation', '--prior_loss_weight=1.0', '--instance_prompt=a sks dog', '--class_prompt=a dog', '--resolution=512', '--train_batch_size=1', '--gradient_accumulation_steps=1', '--learning_rate=5e-6', '--lr_scheduler=constant', '--lr_warmup_steps=0', '--num_class_images=200', '--max_train_steps=800', '--logging_dir=./logs/tensorboard_logs', '--report_to=tensorboard']' returned non-zero exit status 1.

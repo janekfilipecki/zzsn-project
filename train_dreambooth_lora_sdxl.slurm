@@ -13,7 +13,7 @@ export MODEL_NAME="stabilityai/stable-diffusion-xl-base-1.0"
 export INSTANCE_DIR="./dataset/dreambooth-main/dataset/dog6"
 export CLASS_DIR="./dataset/dreambooth_generated/dog"
 export OUTPUT_DIR="./models/dreambooth_lora_sdxl_dog6"
-export HF_HOME="/net/tscratch/people/plgfilipeckijan/.cache/huggingface"
+export HF_HOME="/net/tscratch/people/plgas2000/.cache/huggingface"
 export LOG_DIR="./logs/tensorboard_logs"
 export VAE_PATH="madebyollin/sdxl-vae-fp16-fix"
 

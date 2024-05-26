@@ -1,0 +1,71 @@
+There was a problem when trying to write in your cache folder (/net/tscratch/people/plgfilipeckijan/.cache/huggingface/hub). You should set the environment variable TRANSFORMERS_CACHE to a writable directory.
+There was a problem when trying to write in your cache folder (/net/tscratch/people/plgfilipeckijan/.cache/huggingface/hub). You should set the environment variable TRANSFORMERS_CACHE to a writable directory.
+There was a problem when trying to write in your cache folder (/net/tscratch/people/plgfilipeckijan/.cache/huggingface/hub). Please, ensure the directory exists and can be written to.
+05/21/2024 16:38:43 - INFO - __main__ - Distributed environment: DistributedType.NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+
+Mixed precision type: no
+
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgas2000/zzsn-project/train_dreambooth_lora_sdxl.py", line 1984, in <module>
+    main(args)
+  File "/net/tscratch/people/plgas2000/zzsn-project/train_dreambooth_lora_sdxl.py", line 1032, in main
+    pipeline = StableDiffusionXLPipeline.from_pretrained(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 119, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 702, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 119, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1300, in download
+    info = model_info(pretrained_model_name, token=token, revision=revision)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 119, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/lib/python3.12/site-packages/huggingface_hub/hf_api.py", line 2216, in model_info
+    headers = self._build_hf_headers(token=token)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/lib/python3.12/site-packages/huggingface_hub/hf_api.py", line 8411, in _build_hf_headers
+    return build_hf_headers(
+           ^^^^^^^^^^^^^^^^^
+  File "/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 119, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/lib/python3.12/site-packages/huggingface_hub/utils/_headers.py", line 126, in build_hf_headers
+    token_to_send = get_token_to_send(token)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/lib/python3.12/site-packages/huggingface_hub/utils/_headers.py", line 155, in get_token_to_send
+    cached_token = get_token()
+                   ^^^^^^^^^^^
+  File "/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/lib/python3.12/site-packages/huggingface_hub/utils/_token.py", line 45, in get_token
+    return _get_token_from_google_colab() or _get_token_from_environment() or _get_token_from_file()
+                                                                              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/lib/python3.12/site-packages/huggingface_hub/utils/_token.py", line 118, in _get_token_from_file
+    return _clean_token(Path(constants.HF_TOKEN_PATH).read_text())
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/net/tscratch/people/plgfilipeckijan/.cache/huggingface/token'
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/bin/accelerate", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/lib/python3.12/site-packages/accelerate/commands/accelerate_cli.py", line 46, in main
+    args.func(args)
+  File "/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/lib/python3.12/site-packages/accelerate/commands/launch.py", line 1075, in launch_command
+    simple_launcher(args)
+  File "/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/lib/python3.12/site-packages/accelerate/commands/launch.py", line 681, in simple_launcher
+    raise subprocess.CalledProcessError(returncode=process.returncode, cmd=cmd)
+subprocess.CalledProcessError: Command '['/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/bin/python', 'train_dreambooth_lora_sdxl.py', '--pretrained_model_name_or_path=stabilityai/stable-diffusion-xl-base-1.0', '--instance_data_dir=./dataset/dreambooth-main/dataset/dog6', '--class_data_dir=./dataset/dreambooth_generated/dog', '--output_dir=./models/dreambooth_lora_sdxl_dog6', '--pretrained_vae_model_name_or_path=madebyollin/sdxl-vae-fp16-fix', '--with_prior_preservation', '--prior_loss_weight=1.0', '--instance_prompt=a sks dog', '--class_prompt=a dog', '--resolution=512', '--train_batch_size=1', '--gradient_accumulation_steps=1', '--learning_rate=5e-6', '--lr_scheduler=constant', '--lr_warmup_steps=0', '--num_class_images=200', '--max_train_steps=800', '--logging_dir=./logs/tensorboard_logs', '--report_to=tensorboard']' returned non-zero exit status 1.
