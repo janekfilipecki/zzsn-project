@@ -1,5 +1,0 @@
-/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
-0it [00:00, ?it/s]0it [00:00, ?it/s]
-Fetching 19 files:   0%|          | 0/19 [00:00<?, ?it/s]Fetching 19 files:  11%|█         | 2/19 [00:00<00:02,  6.29it/s]Fetching 19 files:  16%|█▌        | 3/19 [00:00<00:02,  7.26it/s]Fetching 19 files:  21%|██        | 4/19 [00:15<01:27,  5.80s/it]slurmstepd: error: *** JOB 713927 ON t0001 CANCELLED AT 2024-05-17T18:26:04 ***

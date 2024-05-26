@@ -10,9 +10,9 @@
 #SBATCH --output=./logs/dreambooth_sdxl/train_dreambooth_sdxl_%j_%a.out
 
 export MODEL_NAME="stabilityai/stable-diffusion-xl-base-1.0"
-export INSTANCE_DIR="./dataset/dreambooth-main/dataset/dog6"
+export INSTANCE_DIR="./dataset/dreambooth-main/dataset/dog5"
 export CLASS_DIR="./dataset/dreambooth_generated/dog"
-export OUTPUT_DIR="./models/dreambooth_sdxl_dog6"
+export OUTPUT_DIR="./models/dreambooth_sdxl_dog5"
 export HF_HOME="/net/tscratch/people/plgas2000/.cache/huggingface"
 export LOG_DIR="./logs/tensorboard_logs"
 export VAE_PATH="stabilityai/sdxl-vae"
@@ -30,7 +30,7 @@ accelerate launch \
   --output_dir=$OUTPUT_DIR \
   --pretrained_model_name_or_path=$VAE_PATH \
   --with_prior_preservation --prior_loss_weight=1.0 \
-  --instance_prompt="a sks dog" \
+  --instance_prompt="a xyz5 dog" \
   --class_prompt="a dog" \
   --resolution=512 \
   --train_batch_size=1 \
