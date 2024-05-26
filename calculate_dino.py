@@ -6,7 +6,6 @@ import torch.nn.functional as F
 from torchvision import transforms
 from PIL import Image
 from transformers import ViTImageProcessor, ViTModel
-from accelerate import Accelerator
 
 # Set up logging
 def setup_logging(log_dir):
@@ -26,7 +25,6 @@ def extract_features(image_path, model, processor):
 # Main function to calculate DINO metric
 def calculate_dino_metric(original_dir, generated_dir, model_name, log_dir):
     setup_logging(log_dir)
-    accelerator = Accelerator()
 
     processor = ViTImageProcessor.from_pretrained(model_name)
     model = ViTModel.from_pretrained(model_name)
