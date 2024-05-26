@@ -42,7 +42,7 @@ def calculate_clip(generated_dir, prompt_file, model_name, log_dir):
 
     avg_clip_score = sum(scores) / len(scores)
     logging.info(f'CLIP_T Metric: {avg_clip_score}')
-    print(f'Average CLIP Score: {avg_clip_score}')
+    print(f'Average CLIP_T Score: {avg_clip_score}')
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Calculate the CLIP metric for generated images and their prompts.")
