@@ -1,0 +1,2 @@
+usage: accelerate <command> [<args>]
+Accelerate CLI tool: error: argument {config,estimate-memory,env,launch,tpu-config,test}: invalid choice: 'scripts/train/launch' (choose from 'config', 'estimate-memory', 'env', 'launch', 'tpu-config', 'test')
