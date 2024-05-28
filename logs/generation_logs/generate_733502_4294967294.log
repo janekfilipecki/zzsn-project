@@ -1,0 +1,13 @@
+/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/utils/outputs.py:63: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  torch.utils._pytree._register_pytree_node(
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loading pipeline components...:  14%|█▍        | 1/7 [00:00<00:01,  5.25it/s]Loading pipeline components...:  29%|██▊       | 2/7 [00:03<00:10,  2.19s/it]Loading pipeline components...:  43%|████▎     | 3/7 [00:08<00:13,  3.30s/it]Loading pipeline components...:  57%|█████▋    | 4/7 [00:34<00:36, 12.18s/it]Loading pipeline components...:  86%|████████▌ | 6/7 [00:34<00:05,  5.76s/it]Loading pipeline components...: 100%|██████████| 7/7 [01:56<00:00, 26.77s/it]Loading pipeline components...: 100%|██████████| 7/7 [01:56<00:00, 16.66s/it]
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgas2000/zzsn-project/scripts/generate/generate_sdxl.py", line 13, in <module>
+    pipe.load_lora_weights(lora_weights_path)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/loaders/lora.py", line 1312, in load_lora_weights
+    self.load_lora_into_unet(
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/loaders/lora.py", line 463, in load_lora_into_unet
+    unet.load_attn_procs(
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/loaders/unet.py", line 264, in load_attn_procs
+    rank = value_dict["lora.down.weight"].shape[0]
+KeyError: 'lora.down.weight'

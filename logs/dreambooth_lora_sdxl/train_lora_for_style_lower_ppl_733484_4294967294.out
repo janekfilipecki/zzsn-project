@@ -1,0 +1,122 @@
+The following values were not passed to `accelerate launch` and had defaults used instead:
+	`--num_processes` was set to a value of `1`
+	`--num_machines` was set to a value of `1`
+	`--mixed_precision` was set to a value of `'no'`
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/utils/outputs.py:63: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  torch.utils._pytree._register_pytree_node(
+05/28/2024 01:46:03 - INFO - __main__ - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+
+Mixed precision type: fp16
+
+You are using a model of type clip_text_model to instantiate a model of type . This is not supported for all configurations of models and can yield errors.
+You are using a model of type clip_text_model to instantiate a model of type . This is not supported for all configurations of models and can yield errors.
+/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/utils/outputs.py:63: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  torch.utils._pytree._register_pytree_node(
+{'clip_sample_range', 'dynamic_thresholding_ratio', 'thresholding', 'variance_type'} was not found in config. Values will be initialized to default values.
+{'reverse_transformer_layers_per_block', 'dropout', 'attention_type'} was not found in config. Values will be initialized to default values.
+wandb: Currently logged in as: salbowic (salbowic-org). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.17.0 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.6
+wandb: Run data is saved locally in /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240528_014634-2gdngil7
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run dauntless-plasma-2
+wandb: ⭐️ View project at https://wandb.ai/salbowic-org/dreambooth-lora-sd-xl
+wandb: 🚀 View run at https://wandb.ai/salbowic-org/dreambooth-lora-sd-xl/runs/2gdngil7
+05/28/2024 01:46:37 - INFO - __main__ - ***** Running training *****
+05/28/2024 01:46:37 - INFO - __main__ -   Num examples = 7
+05/28/2024 01:46:37 - INFO - __main__ -   Num batches each epoch = 7
+05/28/2024 01:46:37 - INFO - __main__ -   Num Epochs = 143
+05/28/2024 01:46:37 - INFO - __main__ -   Instantaneous batch size per device = 1
+05/28/2024 01:46:37 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 1
+05/28/2024 01:46:37 - INFO - __main__ -   Gradient Accumulation steps = 1
+05/28/2024 01:46:37 - INFO - __main__ -   Total optimization steps = 1000
+Steps:   0%|          | 0/1000 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/net/tscratch/people/plgas2000/zzsn-project/scripts/train_ziplora/train_dreambooth_lora_sdxl.py", line 2013, in <module>
+    main(args)
+  File "/net/tscratch/people/plgas2000/zzsn-project/scripts/train_ziplora/train_dreambooth_lora_sdxl.py", line 1649, in main
+    model_pred = unet(
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/accelerate/utils/operations.py", line 825, in forward
+    return model_forward(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/accelerate/utils/operations.py", line 813, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/amp/autocast_mode.py", line 16, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/models/unet_2d_condition.py", line 1075, in forward
+    sample, res_samples = downsample_block(
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/models/unet_2d_blocks.py", line 1150, in forward
+    hidden_states = attn(
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/models/transformer_2d.py", line 380, in forward
+    hidden_states = torch.utils.checkpoint.checkpoint(
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/_compile.py", line 24, in inner
+    return torch._dynamo.disable(fn, recursive)(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/_dynamo/eval_frame.py", line 489, in _fn
+    return fn(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/_dynamo/external_utils.py", line 17, in inner
+    return fn(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/utils/checkpoint.py", line 489, in checkpoint
+    ret = function(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/models/transformer_2d.py", line 375, in custom_forward
+    return module(*inputs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/models/attention.py", line 323, in forward
+    attn_output = self.attn2(
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/models/attention_processor.py", line 522, in forward
+    return self.processor(
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/models/attention_processor.py", line 1144, in __call__
+    hidden_states = xformers.ops.memory_efficient_attention(
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/xformers/ops/fmha/__init__.py", line 247, in memory_efficient_attention
+    return _memory_efficient_attention(
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/xformers/ops/fmha/__init__.py", line 370, in _memory_efficient_attention
+    return _fMHA.apply(
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/autograd/function.py", line 553, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/xformers/ops/fmha/__init__.py", line 61, in forward
+    out, op_ctx = _memory_efficient_attention_forward_requires_grad(
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/xformers/ops/fmha/__init__.py", line 392, in _memory_efficient_attention_forward_requires_grad
+    inp.validate_inputs()
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/xformers/ops/fmha/common.py", line 123, in validate_inputs
+    raise ValueError(
+ValueError: Query/Key/Value should either all have the same dtype, or (in the quantized case) Key/Value should have dtype torch.int32
+  query.dtype: torch.float32
+  key.dtype  : torch.float16
+  value.dtype: torch.float16
+wandb: - 0.015 MB of 0.030 MB uploadedwandb: \ 0.030 MB of 0.030 MB uploadedwandb: 🚀 View run dauntless-plasma-2 at: https://wandb.ai/salbowic-org/dreambooth-lora-sd-xl/runs/2gdngil7
+wandb: ⭐️ View project at: https://wandb.ai/salbowic-org/dreambooth-lora-sd-xl
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20240528_014634-2gdngil7/logs
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/bin/accelerate", line 8, in <module>
+    sys.exit(main())
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/accelerate/commands/accelerate_cli.py", line 46, in main
+    args.func(args)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/accelerate/commands/launch.py", line 1075, in launch_command
+    simple_launcher(args)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/accelerate/commands/launch.py", line 681, in simple_launcher
+    raise subprocess.CalledProcessError(returncode=process.returncode, cmd=cmd)
+subprocess.CalledProcessError: Command '['/net/tscratch/people/plgas2000/.conda/envs/myenv2/bin/python', 'scripts/train_ziplora/train_dreambooth_lora_sdxl.py', '--pretrained_model_name_or_path=stabilityai/stable-diffusion-xl-base-1.0', '--instance_data_dir=./dataset/styles/style1-cartoon', '--output_dir=./models/dreambooth_lora_sdxl_style1_cartoon_2024-05-28_01-45-52', '--instance_prompt=a cat of in crt style', '--rank=64', '--resolution=1024', '--train_batch_size=1', '--learning_rate=5e-5', '--report_to=wandb', '--lr_scheduler=constant', '--lr_warmup_steps=0', '--max_train_steps=1000', '--validation_prompt=a man in crt style', '--validation_epochs=50', '--seed=0', '--mixed_precision=fp16', '--enable_xformers_memory_efficient_attention', '--gradient_checkpointing', '--use_8bit_adam']' returned non-zero exit status 1.

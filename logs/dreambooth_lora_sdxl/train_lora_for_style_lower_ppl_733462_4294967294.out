@@ -1,0 +1,57 @@
+The following values were not passed to `accelerate launch` and had defaults used instead:
+	`--num_processes` was set to a value of `1`
+	`--num_machines` was set to a value of `1`
+	`--mixed_precision` was set to a value of `'no'`
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/utils/outputs.py:63: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  torch.utils._pytree._register_pytree_node(
+05/28/2024 01:01:33 - INFO - __main__ - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+
+Mixed precision type: fp16
+
+You are using a model of type clip_text_model to instantiate a model of type . This is not supported for all configurations of models and can yield errors.
+You are using a model of type clip_text_model to instantiate a model of type . This is not supported for all configurations of models and can yield errors.
+/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/utils/outputs.py:63: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  torch.utils._pytree._register_pytree_node(
+{'variance_type', 'dynamic_thresholding_ratio', 'thresholding', 'clip_sample_range'} was not found in config. Values will be initialized to default values.
+{'dropout', 'reverse_transformer_layers_per_block', 'attention_type'} was not found in config. Values will be initialized to default values.
+wandb: ERROR api_key not configured (no-tty). call wandb.login(key=[your_api_key])
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgas2000/zzsn-project/scripts/train_ziplora/train_dreambooth_lora_sdxl.py", line 2013, in <module>
+    main(args)
+  File "/net/tscratch/people/plgas2000/zzsn-project/scripts/train_ziplora/train_dreambooth_lora_sdxl.py", line 1517, in main
+    accelerator.init_trackers("dreambooth-lora-sd-xl", config=vars(args))
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/accelerate/accelerator.py", line 669, in _inner
+    return PartialState().on_main_process(function)(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/accelerate/accelerator.py", line 2451, in init_trackers
+    self.trackers.append(tracker_init(project_name, **init_kwargs.get(str(tracker), {})))
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/accelerate/tracking.py", line 81, in execute_on_main_process
+    return function(self, *args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/accelerate/tracking.py", line 298, in __init__
+    self.run = wandb.init(project=self.run_name, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 1200, in init
+    raise e
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 1177, in init
+    wi.setup(kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 301, in setup
+    wandb_login._login(
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/wandb/sdk/wandb_login.py", line 334, in _login
+    wlogin.prompt_api_key()
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/wandb/sdk/wandb_login.py", line 263, in prompt_api_key
+    raise UsageError("api_key not configured (no-tty). call " + directive)
+wandb.errors.UsageError: api_key not configured (no-tty). call wandb.login(key=[your_api_key])
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/bin/accelerate", line 8, in <module>
+    sys.exit(main())
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/accelerate/commands/accelerate_cli.py", line 46, in main
+    args.func(args)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/accelerate/commands/launch.py", line 1075, in launch_command
+    simple_launcher(args)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/accelerate/commands/launch.py", line 681, in simple_launcher
+    raise subprocess.CalledProcessError(returncode=process.returncode, cmd=cmd)
+subprocess.CalledProcessError: Command '['/net/tscratch/people/plgas2000/.conda/envs/myenv2/bin/python', 'scripts/train_ziplora/train_dreambooth_lora_sdxl.py', '--pretrained_model_name_or_path=stabilityai/stable-diffusion-xl-base-1.0', '--instance_data_dir=./dataset/styles/style1-cartoon', '--output_dir=./models/dreambooth_lora_sdxl_style1_cartoon_2024-05-28_01-01-22', '--instance_prompt=a cat of in crt style', '--rank=64', '--resolution=1024', '--train_batch_size=1', '--learning_rate=5e-5', '--report_to=wandb', '--lr_scheduler=constant', '--lr_warmup_steps=0', '--max_train_steps=1000', '--validation_prompt=a man in crt style', '--validation_epochs=50', '--seed=0', '--mixed_precision=fp16', '--enable_xformers_memory_efficient_attention', '--gradient_checkpointing', '--use_8bit_adam']' returned non-zero exit status 1.
