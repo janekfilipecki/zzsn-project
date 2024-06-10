@@ -1,25 +1,25 @@
-a sks boot in the jungle
-a sks boot in the snow
-a sks boot on the beach
-a sks boot on a cobblestone street
-a sks boot on top of pink fabric
-a sks boot on top of a wooden floor
-a sks boot with a city in the background
-a sks boot with a mountain in the background
-a sks boot with a blue house in the background
-a sks boot on top of a purple rug in a forest
-a sks boot with a wheat field in the background
-a sks boot with a tree and autumn leaves in the background
-a sks boot with the Eiffel Tower in the background
-a sks boot floating on top of water
-a sks boot floating in an ocean of milk
-a sks boot on top of green grass with sunflowers around it
-a sks boot on top of a mirror
-a sks boot on top of the sidewalk in a crowded street
-a sks boot on top of a dirt road
-a sks boot on top of a white rug
-a red sks boot
-a purple sks boot
-a shiny sks boot
-a wet sks boot
-a cube shaped sks boot
+a fancy_boot boot in the jungle
+a fancy_boot boot in the snow
+a fancy_boot boot on the beach
+a fancy_boot boot on a cobblestone street
+a fancy_boot boot on top of pink fabric
+a fancy_boot boot on top of a wooden floor
+a fancy_boot boot with a city in the background
+a fancy_boot boot with a mountain in the background
+a fancy_boot boot with a blue house in the background
+a fancy_boot boot on top of a purple rug in a forest
+a fancy_boot boot with a wheat field in the background
+a fancy_boot boot with a tree and autumn leaves in the background
+a fancy_boot boot with the Eiffel Tower in the background
+a fancy_boot boot floating on top of water
+a fancy_boot boot floating in an ocean of milk
+a fancy_boot boot on top of green grass with sunflowers around it
+a fancy_boot boot on top of a mirror
+a fancy_boot boot on top of the sidewalk in a crowded street
+a fancy_boot boot on top of a dirt road
+a fancy_boot boot on top of a white rug
+a red fancy_boot boot
+a purple fancy_boot boot
+a shiny fancy_boot boot
+a wet fancy_boot boot
+a cube shaped fancy_boot boot
