@@ -93,9 +93,9 @@ live_subject_prompts = [
 def write_prompts_to_file(classes, object_prompts, live_subject_prompts):
     for subject_name, class_name in classes.items():
         if class_name in ['backpack', 'bowl', 'can', 'candle', 'clock', 'sneaker', 'boot', 'glasses', 'cartoon', 'teapot', 'vase']:
-            prompt_list = [prompt.format(subject_name, class_name) for prompt in object_prompts]
+            prompt_list = [prompt.format("sks", class_name) for prompt in object_prompts]
         else:
-            prompt_list = [prompt.format(subject_name, class_name) for prompt in live_subject_prompts]
+            prompt_list = [prompt.format("sks", class_name) for prompt in live_subject_prompts]
 
         file_name = f"prompts/{subject_name}_prompts.txt"
         with open(file_name, 'w') as file:

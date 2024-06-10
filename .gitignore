@@ -3,3 +3,4 @@ dreambooth_test_model/
 dreambooth_train_images/
 dataset/
 models/
+generated/
