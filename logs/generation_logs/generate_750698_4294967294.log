@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgfilipeckijan/zzsn-project/scripts/generate/generate_sdxl.py", line 1, in <module>
+    from huggingface_hub import snapshot_download
+ModuleNotFoundError: No module named 'huggingface_hub'

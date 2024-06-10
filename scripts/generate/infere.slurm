@@ -11,4 +11,4 @@
 
 export HF_HOME="/net/tscratch/people/plgfilipeckijan/.cache/huggingface"
 
-python $1
+python "$@"
