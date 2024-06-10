@@ -1,0 +1,13 @@
+/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loading pipeline components...:  14%|█▍        | 1/7 [00:00<00:00,  9.88it/s]Loading pipeline components...:  29%|██▊       | 2/7 [00:03<00:09,  1.93s/it]Loading pipeline components...:  43%|████▎     | 3/7 [00:03<00:04,  1.12s/it]Loading pipeline components...:  71%|███████▏  | 5/7 [00:13<00:06,  3.34s/it]Loading pipeline components...:  86%|████████▌ | 6/7 [01:31<00:24, 24.71s/it]Loading pipeline components...: 100%|██████████| 7/7 [01:31<00:00, 17.54s/it]Loading pipeline components...: 100%|██████████| 7/7 [01:31<00:00, 13.03s/it]
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgfilipeckijan/zzsn-project/scripts/generate/generate_sdxl.py", line 49, in <module>
+    image = pipe(prompt=prompt, num_inference_steps=num_inference_steps).images[0]
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/diffusers/pipelines/stable_diffusion_xl/pipeline_stable_diffusion_xl.py", line 1012, in __call__
+    self.check_inputs(
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/diffusers/pipelines/stable_diffusion_xl/pipeline_stable_diffusion_xl.py", line 638, in check_inputs
+    raise ValueError(f"`prompt` has to be of type `str` or `list` but is {type(prompt)}")
+ValueError: `prompt` has to be of type `str` or `list` but is <class 'tuple'>

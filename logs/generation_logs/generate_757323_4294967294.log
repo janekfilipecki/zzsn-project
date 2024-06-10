@@ -1,0 +1,7 @@
+/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loading pipeline components...:  14%|█▍        | 1/7 [00:05<00:32,  5.48s/it]Loading pipeline components...:  29%|██▊       | 2/7 [01:29<04:18, 51.61s/it]Loading pipeline components...:  43%|████▎     | 3/7 [01:29<01:52, 28.12s/it]Loading pipeline components...:  57%|█████▋    | 4/7 [01:33<00:55, 18.48s/it]Loading pipeline components...:  86%|████████▌ | 6/7 [01:33<00:08,  8.72s/it]Loading pipeline components...: 100%|██████████| 7/7 [02:03<00:00, 14.48s/it]Loading pipeline components...: 100%|██████████| 7/7 [02:03<00:00, 17.58s/it]
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgfilipeckijan/zzsn-project/scripts/generate/generate_sdxl.py", line 46, in <module>
+    for i in range(num_generations):
+NameError: name 'num_generations' is not defined
