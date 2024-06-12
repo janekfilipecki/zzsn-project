@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgfilipeckijan/zzsn-project/scripts/generate/generate_sdxl.py", line 2, in <module>
+    from diffusers import DiffusionPipeline
+ModuleNotFoundError: No module named 'diffusers'
