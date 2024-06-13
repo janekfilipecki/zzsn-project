@@ -13,7 +13,7 @@ export MODEL_NAME="openai/clip-vit-base-patch32"
 export GENERATED_DIR="./generated/dog6"
 export PROMPT_FILE="./prompts/dog6.txt"
 export LOG_DIR="./logs/metrics_logs"
-export HF_HOME="/net/tscratch/people/plgfilipeckijan/.cache/huggingface"
+export HF_HOME="/net/tscratch/people/plgas2000/.cache/huggingface"
 
 python scripts/metrics/calculate_clip_t.py \
     --generated_dir=$GENERATED_DIR \

@@ -9,6 +9,6 @@
 #SBATCH --nodes=1
 #SBATCH --output=./logs/generation_logs/generate_%j_%a.log
 
-export HF_HOME="/net/tscratch/people/plgfilipeckijan/.cache/huggingface"
+export HF_HOME="/net/tscratch/people/plgas2000/.cache/huggingface"
 
 python "$@"
