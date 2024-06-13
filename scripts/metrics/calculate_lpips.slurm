@@ -12,7 +12,7 @@
 export ORIGINAL_DIR="./dataset/dreambooth-main/dataset/dog6"
 export GENERATED_DIR="./generated/dog6"
 export LOG_DIR="./logs/metrics_logs"
-export HF_HOME="/net/tscratch/people/plgas2000/.cache/huggingface"
+export HF_HOME="/net/tscratch/people/plgfilipeckijan/.cache/huggingface"
 
 python scripts/metrics/calculate_lpips.py \
   --original_dir=$ORIGINAL_DIR \
