@@ -1,6 +1,0 @@
-/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/utils/outputs.py:63: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
-  torch.utils._pytree._register_pytree_node(
-Traceback (most recent call last):
-  File "/net/tscratch/people/plgas2000/zzsn-project/scripts/generate/generate_ziplora.py", line 3, in <module>
-    from ziplora_pytorch.utils import insert_ziplora_to_unet
-ModuleNotFoundError: No module named 'ziplora_pytorch'

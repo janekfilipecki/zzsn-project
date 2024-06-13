@@ -1,7 +1,0 @@
-/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/utils/outputs.py:63: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
-  torch.utils._pytree._register_pytree_node(
-Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loading pipeline components...:  29%|██▊       | 2/7 [00:00<00:00,  8.53it/s]Loading pipeline components...:  43%|████▎     | 3/7 [00:00<00:00,  8.94it/s]Loading pipeline components...:  57%|█████▋    | 4/7 [00:00<00:00,  4.81it/s]Loading pipeline components...:  71%|███████▏  | 5/7 [00:00<00:00,  5.34it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:01<00:00,  3.04it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:01<00:00,  3.88it/s]
-Traceback (most recent call last):
-  File "/net/tscratch/people/plgas2000/zzsn-project/scripts/generate/generate_ziplora.py", line 12, in <module>
-    image = pipeline(prompt=prompt).images[0]
-NameError: name 'prompt' is not defined

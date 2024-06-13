@@ -12,10 +12,10 @@
 export MODEL_NAME="stabilityai/stable-diffusion-xl-base-1.0"
 
 timestamp=$(date +"%Y-%m-%d_%H-%M-%S")
-export OUTPUT_DIR="./models/dreambooth_lora_sdxl_style1_cartoon_$timestamp"
-export INSTANCE_DIR="./dataset/styles/style1-cartoon"
-export PROMPT="a cat of in crt style"
-export VALID_PROMPT="a man in crt style"
+export OUTPUT_DIR="./models/dreambooth_lora_sdxl_style2_r256_$timestamp"
+export INSTANCE_DIR="./dataset/styles/style2-drawing"
+export PROMPT="a bicycle in the crt style"
+export VALID_PROMPT="a hat in the crt style"
 export HF_HOME="/net/tscratch/people/plgas2000/.cache/huggingface"
 export LOG_DIR="./logs/tensorboard_logs"
 
@@ -24,7 +24,7 @@ accelerate launch scripts/train_ziplora/train_dreambooth_lora_sdxl.py \
   --instance_data_dir=$INSTANCE_DIR \
   --output_dir=$OUTPUT_DIR \
   --instance_prompt="${PROMPT}" \
-  --rank=64 \
+  --rank=256 \
   --resolution=1024 \
   --train_batch_size=1 \
   --learning_rate=5e-5 \
@@ -32,9 +32,10 @@ accelerate launch scripts/train_ziplora/train_dreambooth_lora_sdxl.py \
   --lr_scheduler="constant" \
   --lr_warmup_steps=0 \
   --max_train_steps=1000 \
+  --train_text_encoder \
   --validation_prompt="${VALID_PROMPT}" \
-  --validation_epochs=50 \
-  --seed="0" \
+  --validation_epochs=100 \
+  --seed="1" \
   --mixed_precision="fp16" \
   --gradient_checkpointing \
   --use_8bit_adam \

@@ -14,19 +14,19 @@ export LOG_DIR="./logs/tensorboard_logs"
 export HF_HOME="/net/tscratch/people/plgas2000/.cache/huggingface"
 
 # for subject
-export LORA_PATH="models/lora_subject_dog3"
-export INSTANCE_DIR="./dataset/dreambooth-main/dataset/dog3"
-export PROMPT="a photo of sks dog"
+export LORA_PATH="./models/dreambooth_lora_sdxl_monster_toy_subject_r32_2024-06-12_02-14-22"
+export INSTANCE_DIR="./dataset/dreambooth-main/dataset/dog6"
+export PROMPT="a sbu toy"
 
 # for style
-export LORA_PATH2="./models/lora_style1"
-export INSTANCE_DIR2="./dataset/styles/style1-cartoon"
-export PROMPT2="a cat of in crt style"
+export LORA_PATH2="./models/dreambooth_lora_sdxl_style2_r256_2024-06-12_02-10-52"
+export INSTANCE_DIR2="./dataset/styles/style3-sketch"
+export PROMPT2="a bicycle in the crt style"
 
 # general
 timestamp=$(date +"%Y-%m-%d_%H-%M-%S")
-export OUTPUT_DIR="./models/ziplora_style1_dog3_$timestamp"
-export VALID_PROMPT="a sks dog in crt style"
+export OUTPUT_DIR="./models/ziplora_style2_r256_monster_toy_r32_$timestamp"
+export VALID_PROMPT="a sbu toy in the crt style"
 
 
 accelerate launch scripts/train_ziplora/train_dreambooth_ziplora_sdxl.py \
@@ -46,8 +46,8 @@ accelerate launch scripts/train_ziplora/train_dreambooth_ziplora_sdxl.py \
   --lr_warmup_steps=0 \
   --max_train_steps=100 \
   --validation_prompt="${VALID_PROMPT}" \
-  --validation_epochs=10 \
-  --seed="0" \
+  --validation_epochs=100 \
+  --seed="100" \
   --mixed_precision="fp16" \
   --report_to="wandb" \
   --gradient_checkpointing \

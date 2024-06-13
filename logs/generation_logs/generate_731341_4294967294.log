@@ -1,17 +1,0 @@
-Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loading pipeline components...:  29%|██▊       | 2/7 [00:00<00:00, 16.87it/s]Loading pipeline components...:  29%|██▊       | 2/7 [00:19<00:00, 16.87it/s]Loading pipeline components...:  43%|████▎     | 3/7 [01:13<02:03, 30.76s/it]Loading pipeline components...:  57%|█████▋    | 4/7 [01:18<01:03, 21.04s/it]Loading pipeline components...:  71%|███████▏  | 5/7 [01:21<00:29, 14.80s/it]Loading pipeline components...: 100%|██████████| 7/7 [01:46<00:00, 13.57s/it]Loading pipeline components...: 100%|██████████| 7/7 [01:46<00:00, 15.19s/it]
-Traceback (most recent call last):
-  File "/net/tscratch/people/plgas2000/zzsn-project/scripts/generate/generate_sdxl.py", line 13, in <module>
-    pipe.load_lora_weights(lora_weights_path)
-  File "/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/lib/python3.9/site-packages/diffusers/loaders/lora.py", line 1350, in load_lora_weights
-    state_dict, network_alphas = self.lora_state_dict(
-  File "/net/people/plgrid/plgas2000/.local/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 119, in _inner_fn
-    return fn(*args, **kwargs)
-  File "/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/lib/python3.9/site-packages/diffusers/loaders/lora.py", line 242, in lora_state_dict
-    weight_name = cls._best_guess_weight_name(
-  File "/net/tscratch/people/plgas2000/.conda/envs/env_zzsn/lib/python3.9/site-packages/diffusers/loaders/lora.py", line 325, in _best_guess_weight_name
-    files_in_repo = model_info(pretrained_model_name_or_path_or_dict).siblings
-  File "/net/people/plgrid/plgas2000/.local/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 111, in _inner_fn
-    validate_repo_id(arg_value)
-  File "/net/people/plgrid/plgas2000/.local/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 159, in validate_repo_id
-    raise HFValidationError(
-huggingface_hub.utils._validators.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '../../models/dreambooth_lora_sdxl_style1_cartoon_2024-05-26_23-37-49/pytorch_lora_weights.safetensors'. Use `repo_type` argument if needed.

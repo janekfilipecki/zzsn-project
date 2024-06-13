@@ -12,10 +12,10 @@
 export MODEL_NAME="stabilityai/stable-diffusion-xl-base-1.0"
 
 timestamp=$(date +"%Y-%m-%d_%H-%M-%S")
-export OUTPUT_DIR="./models/dreambooth_lora_sdxl_dog3_subject_$timestamp"
-export INSTANCE_DIR="./dataset/dreambooth-main/dataset/dog3"
-export PROMPT="a photo of sks dog"
-export VALID_PROMPT="a photo of sks dog in a bucket"
+export OUTPUT_DIR="./models/dreambooth_lora_sdxl_monster_toy_subject_r32_$timestamp"
+export INSTANCE_DIR="./dataset/dreambooth-main/dataset/monster_toy"
+export PROMPT="a sbu toy"
+export VALID_PROMPT="a sbu toy in a bucket"
 export HF_HOME="/net/tscratch/people/plgas2000/.cache/huggingface"
 export LOG_DIR="./logs/tensorboard_logs"
 
@@ -24,7 +24,7 @@ accelerate launch scripts/train_ziplora/train_dreambooth_lora_sdxl.py \
   --instance_data_dir=$INSTANCE_DIR \
   --output_dir=$OUTPUT_DIR \
   --instance_prompt="${PROMPT}" \
-  --rank=64 \
+  --rank=32 \
   --resolution=1024 \
   --train_batch_size=1 \
   --learning_rate=5e-5 \
@@ -34,7 +34,7 @@ accelerate launch scripts/train_ziplora/train_dreambooth_lora_sdxl.py \
   --max_train_steps=1000 \
   --validation_prompt="${VALID_PROMPT}" \
   --validation_epochs=50 \
-  --seed="0" \
+  --seed="1" \
   --mixed_precision="fp16" \
   --gradient_checkpointing \
   --use_8bit_adam \

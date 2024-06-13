@@ -1,0 +1,11 @@
+/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/utils/outputs.py:63: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  torch.utils._pytree._register_pytree_node(
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loading pipeline components...:  14%|█▍        | 1/7 [00:00<00:02,  2.01it/s]Loading pipeline components...:  43%|████▎     | 3/7 [00:00<00:00,  4.90it/s]Loading pipeline components...:  57%|█████▋    | 4/7 [00:01<00:01,  2.36it/s]Loading pipeline components...:  86%|████████▌ | 6/7 [00:01<00:00,  3.87it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:01<00:00,  3.95it/s]
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgas2000/zzsn-project/scripts/generate/generate_ziplora.py", line 12, in <module>
+    pipeline.unet = insert_ziplora_to_unet(pipeline.unet, ziplora_name_or_path)
+  File "/net/tscratch/people/plgas2000/zzsn-project/scripts/generate/ziplora_utils.py", line 239, in insert_ziplora_to_unet
+    state_dict = merge_lora_weights_for_inference(tensors, key=attn_name)
+  File "/net/tscratch/people/plgas2000/zzsn-project/scripts/generate/ziplora_utils.py", line 213, in merge_lora_weights_for_inference
+    out[part] = tensors[key]
+KeyError: 'unet.unet.down_blocks.1.attentions.0.transformer_blocks.0.attn1.to_q.lora.weight'

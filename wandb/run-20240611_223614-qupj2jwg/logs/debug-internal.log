@@ -1,0 +1,985 @@
+2024-06-11 22:36:14,274 INFO    StreamThr :3563843 [internal.py:wandb_internal():86] W&B internal server running at pid: 3563843, started at: 2024-06-11 22:36:14.273544
+2024-06-11 22:36:14,275 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status
+2024-06-11 22:36:14,278 INFO    WriterThread:3563843 [datastore.py:open_for_write():87] open: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/run-qupj2jwg.wandb
+2024-06-11 22:36:14,279 DEBUG   SenderThread:3563843 [sender.py:send():379] send: header
+2024-06-11 22:36:14,434 DEBUG   SenderThread:3563843 [sender.py:send():379] send: run
+2024-06-11 22:36:14,864 INFO    SenderThread:3563843 [dir_watcher.py:__init__():211] watching files in: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files
+2024-06-11 22:36:14,864 INFO    SenderThread:3563843 [sender.py:_start_run_threads():1124] run started: qupj2jwg with start time 1718138174.275807
+2024-06-11 22:36:14,872 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: check_version
+2024-06-11 22:36:14,872 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: check_version
+2024-06-11 22:36:14,983 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: run_start
+2024-06-11 22:36:15,011 DEBUG   HandlerThread:3563843 [system_info.py:__init__():26] System info init
+2024-06-11 22:36:15,012 DEBUG   HandlerThread:3563843 [system_info.py:__init__():41] System info init done
+2024-06-11 22:36:15,012 INFO    HandlerThread:3563843 [system_monitor.py:start():194] Starting system monitor
+2024-06-11 22:36:15,012 INFO    SystemMonitor:3563843 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-11 22:36:15,012 INFO    HandlerThread:3563843 [system_monitor.py:probe():214] Collecting system info
+2024-06-11 22:36:15,012 INFO    SystemMonitor:3563843 [interfaces.py:start():190] Started cpu monitoring
+2024-06-11 22:36:15,013 INFO    SystemMonitor:3563843 [interfaces.py:start():190] Started disk monitoring
+2024-06-11 22:36:15,014 INFO    SystemMonitor:3563843 [interfaces.py:start():190] Started gpu monitoring
+2024-06-11 22:36:15,015 INFO    SystemMonitor:3563843 [interfaces.py:start():190] Started memory monitoring
+2024-06-11 22:36:15,017 INFO    SystemMonitor:3563843 [interfaces.py:start():190] Started network monitoring
+2024-06-11 22:36:15,058 DEBUG   HandlerThread:3563843 [system_info.py:probe():150] Probing system
+2024-06-11 22:36:15,064 DEBUG   HandlerThread:3563843 [system_info.py:_probe_git():135] Probing git
+2024-06-11 22:36:15,081 DEBUG   HandlerThread:3563843 [system_info.py:_probe_git():143] Probing git done
+2024-06-11 22:36:15,081 DEBUG   HandlerThread:3563843 [system_info.py:probe():198] Probing system done
+2024-06-11 22:36:15,081 DEBUG   HandlerThread:3563843 [system_monitor.py:probe():223] {'os': 'Linux-5.14.0-362.24.1.el9_3.x86_64-x86_64-with-glibc2.34', 'python': '3.9.19', 'heartbeatAt': '2024-06-11T20:36:15.058318', 'startedAt': '2024-06-11T20:36:14.241445', 'docker': None, 'cuda': None, 'args': ('--pretrained_model_name_or_path=stabilityai/stable-diffusion-xl-base-1.0', '--output_dir=./models/ziplora_style3_r256_dog6_r32_reversed_paths_2024-06-11_22-35-19', '--lora_name_or_path=./models/dreambooth_lora_sdxl_style3_sketch_r256_2024-06-11_20-23-49', '--instance_prompt=a bicycle in the crt style', '--instance_data_dir=./dataset/styles/style3-sketch', '--lora_name_or_path_2=./models/dreambooth_lora_sdxl_dog6_subject_r32_2024-06-11_16-46-47', '--instance_prompt_2=a sbu dog', '--instance_data_dir_2=./dataset/dreambooth-main/dataset/dog6', '--resolution=1024', '--train_batch_size=1', '--learning_rate=5e-5', '--similarity_lambda=0.01', '--lr_scheduler=constant', '--lr_warmup_steps=0', '--max_train_steps=100', '--validation_prompt=a sbu dog in the crt style', '--validation_epochs=50', '--seed=100', '--mixed_precision=fp16', '--report_to=wandb', '--gradient_checkpointing', '--use_8bit_adam'), 'state': 'running', 'program': '/net/tscratch/people/plgas2000/zzsn-project/scripts/train_ziplora/train_dreambooth_ziplora_sdxl.py', 'codePathLocal': 'scripts/train_ziplora/train_dreambooth_ziplora_sdxl.py', 'codePath': 'scripts/train_ziplora/train_dreambooth_ziplora_sdxl.py', 'git': {'remote': 'https://github.com/janekfilipecki/zzsn-project.git', 'commit': '10eb29fcf64f70c85532d23b8d496f5f3836b01a'}, 'email': 's.albowicz@gmail.com', 'root': '/net/tscratch/people/plgas2000/zzsn-project', 'host': 't0012', 'username': 'plgas2000', 'executable': '/net/tscratch/people/plgas2000/.conda/envs/myenv2/bin/python', 'cpu_count': 128, 'cpu_count_logical': 128, 'cpu_freq': {'current': 2541.9765234375, 'min': 1500.0, 'max': 2250.0}, 'cpu_freq_per_core': [{'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 3227.849, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 3227.751, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 3180.599, 'min': 1500.0, 'max': 2250.0}, {'current': 3180.874, 'min': 1500.0, 'max': 2250.0}, {'current': 3181.326, 'min': 1500.0, 'max': 2250.0}, {'current': 3180.914, 'min': 1500.0, 'max': 2250.0}, {'current': 3178.738, 'min': 1500.0, 'max': 2250.0}, {'current': 3178.684, 'min': 1500.0, 'max': 2250.0}, {'current': 3178.665, 'min': 1500.0, 'max': 2250.0}, {'current': 3178.793, 'min': 1500.0, 'max': 2250.0}, {'current': 3172.32, 'min': 1500.0, 'max': 2250.0}, {'current': 3172.24, 'min': 1500.0, 'max': 2250.0}, {'current': 3172.332, 'min': 1500.0, 'max': 2250.0}, {'current': 3172.561, 'min': 1500.0, 'max': 2250.0}, {'current': 3176.264, 'min': 1500.0, 'max': 2250.0}, {'current': 3175.91, 'min': 1500.0, 'max': 2250.0}, {'current': 3175.593, 'min': 1500.0, 'max': 2250.0}, {'current': 3176.009, 'min': 1500.0, 'max': 2250.0}, {'current': 3178.201, 'min': 1500.0, 'max': 2250.0}, {'current': 3178.028, 'min': 1500.0, 'max': 2250.0}, {'current': 3178.046, 'min': 1500.0, 'max': 2250.0}, {'current': 3177.96, 'min': 1500.0, 'max': 2250.0}, {'current': 3175.73, 'min': 1500.0, 'max': 2250.0}, {'current': 3175.822, 'min': 1500.0, 'max': 2250.0}, {'current': 3175.79, 'min': 1500.0, 'max': 2250.0}, {'current': 3175.663, 'min': 1500.0, 'max': 2250.0}, {'current': 3175.392, 'min': 1500.0, 'max': 2250.0}, {'current': 3175.195, 'min': 1500.0, 'max': 2250.0}, {'current': 3174.574, 'min': 1500.0, 'max': 2250.0}, {'current': 3175.502, 'min': 1500.0, 'max': 2250.0}, {'current': 3228.612, 'min': 1500.0, 'max': 2250.0}, {'current': 3228.178, 'min': 1500.0, 'max': 2250.0}, {'current': 3228.438, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 3276.643, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 3275.262, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 3276.833, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 3277.16, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}], 'disk': {'/': {'total': 7.477489471435547, 'used': 4.116069793701172}}, 'gpu': 'NVIDIA A100-SXM4-40GB', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA A100-SXM4-40GB', 'memory_total': 42949672960}], 'memory': {'total': 1007.735912322998}}
+2024-06-11 22:36:15,081 INFO    HandlerThread:3563843 [system_monitor.py:probe():224] Finished collecting system info
+2024-06-11 22:36:15,081 INFO    HandlerThread:3563843 [system_monitor.py:probe():227] Publishing system info
+2024-06-11 22:36:15,081 DEBUG   HandlerThread:3563843 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-06-11 22:36:15,867 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_created():271] file/dir created: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/conda-environment.yaml
+2024-06-11 22:36:17,453 DEBUG   HandlerThread:3563843 [system_info.py:_save_conda():222] Saving conda packages done
+2024-06-11 22:36:17,455 INFO    HandlerThread:3563843 [system_monitor.py:probe():229] Finished publishing system info
+2024-06-11 22:36:17,476 DEBUG   SenderThread:3563843 [sender.py:send():379] send: files
+2024-06-11 22:36:17,476 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-06-11 22:36:17,549 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: python_packages
+2024-06-11 22:36:17,549 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: python_packages
+2024-06-11 22:36:17,549 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-11 22:36:17,550 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-11 22:36:17,550 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 22:36:17,769 DEBUG   SenderThread:3563843 [sender.py:send():379] send: telemetry
+2024-06-11 22:36:17,769 DEBUG   SenderThread:3563843 [sender.py:send():379] send: config
+2024-06-11 22:36:17,867 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/conda-environment.yaml
+2024-06-11 22:36:17,867 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_created():271] file/dir created: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:36:17,867 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_created():271] file/dir created: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-metadata.json
+2024-06-11 22:36:17,867 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_created():271] file/dir created: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/requirements.txt
+2024-06-11 22:36:18,112 INFO    wandb-upload_0:3563843 [upload_job.py:push():131] Uploaded file /net/tscratch/people/plgas2000/slurm_jobdir/758175/tmp/tmpngz5lgvywandb/wnb1mdn6-wandb-metadata.json
+2024-06-11 22:36:19,771 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:36:19,868 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:36:21,157 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:36:21,157 DEBUG   SenderThread:3563843 [sender.py:send():379] send: telemetry
+2024-06-11 22:36:21,869 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:36:23,537 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:36:23,538 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:36:23,538 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:36:23,539 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:36:23,870 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:36:23,870 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_created():271] file/dir created: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:36:25,540 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:36:25,804 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:36:25,805 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:36:25,805 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:36:25,807 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:36:25,871 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:36:27,872 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:36:28,185 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:36:28,185 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:36:28,185 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:36:28,188 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:36:28,873 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:36:29,873 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:36:30,451 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:36:30,452 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:36:30,452 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:36:30,455 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:36:30,875 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:36:31,455 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:36:31,875 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:36:32,549 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-11 22:36:32,550 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-11 22:36:32,550 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 22:36:32,871 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:36:32,872 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:36:32,872 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:36:32,875 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:36:32,876 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:36:33,876 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:36:35,047 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:36:35,048 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:36:35,048 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:36:35,051 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:36:35,878 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:36:35,878 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:36:37,052 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:36:41,880 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:36:42,781 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:36:47,550 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-11 22:36:47,550 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-11 22:36:47,551 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 22:36:48,718 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:36:49,883 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/config.yaml
+2024-06-11 22:36:53,913 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:36:58,913 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:37:02,550 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-11 22:37:02,550 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 22:37:02,590 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-11 22:37:04,745 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:37:09,746 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:37:14,746 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:37:15,017 DEBUG   SystemMonitor:3563843 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-11 22:37:15,019 DEBUG   SenderThread:3563843 [sender.py:send():379] send: stats
+2024-06-11 22:37:17,550 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-11 22:37:17,550 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 22:37:17,591 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-11 22:37:19,769 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:37:24,769 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:37:25,215 DEBUG   SenderThread:3563843 [sender.py:send():379] send: files
+2024-06-11 22:37:25,215 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file media/images/validation_7_dd6fa693d49645eae7ab.png with policy now
+2024-06-11 22:37:25,257 DEBUG   SenderThread:3563843 [sender.py:send():379] send: files
+2024-06-11 22:37:25,257 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file media/images/validation_7_74ab8e1fa1bb7e3338c0.png with policy now
+2024-06-11 22:37:25,258 DEBUG   SenderThread:3563843 [sender.py:send():379] send: files
+2024-06-11 22:37:25,258 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file media/images/validation_7_0a66bef7b25452285957.png with policy now
+2024-06-11 22:37:25,258 DEBUG   SenderThread:3563843 [sender.py:send():379] send: files
+2024-06-11 22:37:25,258 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file media/images/validation_7_3c2222eda040d519e1d5.png with policy now
+2024-06-11 22:37:25,363 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:37:25,364 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:37:25,364 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:37:25,366 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:37:25,896 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:37:25,896 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_created():271] file/dir created: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/media/images/validation_7_74ab8e1fa1bb7e3338c0.png
+2024-06-11 22:37:25,896 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_created():271] file/dir created: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/media/images/validation_7_3c2222eda040d519e1d5.png
+2024-06-11 22:37:25,897 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_created():271] file/dir created: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/media/images/validation_7_0a66bef7b25452285957.png
+2024-06-11 22:37:25,897 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_created():271] file/dir created: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/media/images/validation_7_dd6fa693d49645eae7ab.png
+2024-06-11 22:37:25,897 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_created():271] file/dir created: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/media/images
+2024-06-11 22:37:25,897 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_created():271] file/dir created: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/media
+2024-06-11 22:37:26,460 INFO    wandb-upload_0:3563843 [upload_job.py:push():131] Uploaded file /net/tscratch/people/plgas2000/slurm_jobdir/758175/tmp/tmpngz5lgvywandb/40v5s364-media/images/validation_7_dd6fa693d49645eae7ab.png
+2024-06-11 22:37:26,581 INFO    wandb-upload_1:3563843 [upload_job.py:push():131] Uploaded file /net/tscratch/people/plgas2000/slurm_jobdir/758175/tmp/tmpngz5lgvywandb/ehbc89bc-media/images/validation_7_74ab8e1fa1bb7e3338c0.png
+2024-06-11 22:37:26,608 INFO    wandb-upload_2:3563843 [upload_job.py:push():131] Uploaded file /net/tscratch/people/plgas2000/slurm_jobdir/758175/tmp/tmpngz5lgvywandb/6y8xduv0-media/images/validation_7_0a66bef7b25452285957.png
+2024-06-11 22:37:26,615 INFO    wandb-upload_3:3563843 [upload_job.py:push():131] Uploaded file /net/tscratch/people/plgas2000/slurm_jobdir/758175/tmp/tmpngz5lgvywandb/zem664mb-media/images/validation_7_3c2222eda040d519e1d5.png
+2024-06-11 22:37:27,735 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:37:27,861 INFO    wandb-upload_2:3563843 [upload_job.py:push():131] Uploaded file /net/tscratch/people/plgas2000/slurm_jobdir/758175/tmp/tmpngz5lgvywandb/m28vn7xz-media/images/validation_7_dd6fa693d49645eae7ab.png
+2024-06-11 22:37:27,898 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:37:27,933 INFO    wandb-upload_0:3563843 [upload_job.py:push():131] Uploaded file /net/tscratch/people/plgas2000/slurm_jobdir/758175/tmp/tmpngz5lgvywandb/75tige9p-media/images/validation_7_0a66bef7b25452285957.png
+2024-06-11 22:37:29,195 INFO    wandb-upload_3:3563843 [upload_job.py:push():131] Uploaded file /net/tscratch/people/plgas2000/slurm_jobdir/758175/tmp/tmpngz5lgvywandb/t0949arv-media/images/validation_7_74ab8e1fa1bb7e3338c0.png
+2024-06-11 22:37:29,238 INFO    wandb-upload_2:3563843 [upload_job.py:push():131] Uploaded file /net/tscratch/people/plgas2000/slurm_jobdir/758175/tmp/tmpngz5lgvywandb/ozthl678-media/images/validation_7_3c2222eda040d519e1d5.png
+2024-06-11 22:37:30,123 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:37:30,123 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:37:30,123 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:37:30,124 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:37:30,125 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:37:30,901 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:37:31,902 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:37:32,388 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:37:32,389 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:37:32,389 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:37:32,390 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:37:32,550 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-11 22:37:32,550 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 22:37:32,550 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-11 22:37:32,902 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:37:33,903 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:37:34,824 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:37:34,825 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:37:34,825 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:37:34,826 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:37:34,905 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:37:35,827 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:37:35,905 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:37:37,053 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:37:37,053 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:37:37,053 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:37:37,055 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:37:37,907 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:37:37,907 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:37:39,444 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:37:39,444 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:37:39,444 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:37:39,446 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:37:39,908 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:37:39,908 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:37:41,446 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:37:41,669 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:37:41,669 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:37:41,669 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:37:41,671 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:37:41,910 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:37:41,910 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:37:44,104 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:37:44,105 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:37:44,105 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:37:44,107 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:37:44,912 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:37:45,021 DEBUG   SenderThread:3563843 [sender.py:send():379] send: stats
+2024-06-11 22:37:45,913 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:37:46,491 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:37:46,492 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:37:46,492 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:37:46,492 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:37:46,494 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:37:46,914 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:37:47,550 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-11 22:37:47,550 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 22:37:47,551 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-11 22:37:47,915 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:37:48,806 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:37:48,807 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:37:48,807 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:37:48,808 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:37:48,916 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:37:49,917 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:37:51,155 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:37:51,155 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:37:51,155 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:37:51,157 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:37:51,918 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:37:51,919 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:37:52,157 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:37:53,427 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:37:53,427 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:37:53,427 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:37:53,429 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:37:53,920 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:37:55,816 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:37:55,817 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:37:55,817 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:37:55,818 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:37:55,921 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:37:55,922 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:37:57,819 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:37:57,923 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:37:58,043 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:37:58,043 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:37:58,043 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:37:58,045 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:37:58,924 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:37:59,925 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:38:00,488 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:38:00,489 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:38:00,489 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:38:00,490 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:38:00,925 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:38:01,926 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:38:02,550 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-11 22:38:02,550 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 22:38:02,551 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-11 22:38:02,801 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:38:02,802 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:38:02,802 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:38:02,803 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:38:02,927 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:38:03,804 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:38:03,927 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:38:05,152 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:38:05,153 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:38:05,153 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:38:05,154 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:38:05,929 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:38:05,929 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:38:07,422 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:38:07,423 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:38:07,423 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:38:07,425 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:38:07,931 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:38:09,425 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:38:09,812 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:38:09,814 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:38:09,814 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:38:09,815 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:38:09,933 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:38:09,933 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:38:11,934 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:38:12,085 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:38:12,085 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:38:12,086 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:38:12,087 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:38:12,937 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:38:13,938 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:38:14,442 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:38:14,442 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:38:14,442 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:38:14,442 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:38:14,444 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:38:14,939 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:38:15,022 DEBUG   SenderThread:3563843 [sender.py:send():379] send: stats
+2024-06-11 22:38:15,940 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:38:16,768 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:38:16,769 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:38:16,769 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:38:16,770 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:38:16,941 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:38:17,550 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-11 22:38:17,550 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 22:38:17,552 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-11 22:38:17,942 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:38:19,209 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:38:19,210 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:38:19,210 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:38:19,211 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:38:19,946 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:38:19,946 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:38:20,212 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:38:21,441 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:38:21,442 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:38:21,442 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:38:21,444 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:38:21,947 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:38:23,831 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:38:23,832 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:38:23,832 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:38:23,833 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:38:23,949 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:38:23,949 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:38:25,834 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:38:25,950 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:38:26,102 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:38:26,102 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:38:26,102 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:38:26,104 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:38:26,951 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:38:27,952 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:38:28,495 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:38:28,495 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:38:28,495 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:38:28,497 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:38:28,953 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:38:29,954 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:38:30,721 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:38:30,721 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:38:30,722 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:38:30,723 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:38:30,954 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:38:31,723 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:38:31,955 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:38:32,550 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-11 22:38:32,551 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 22:38:32,552 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-11 22:38:33,205 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:38:33,206 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:38:33,206 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:38:33,208 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:38:33,956 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:38:33,957 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:38:35,434 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:38:35,435 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:38:35,435 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:38:35,436 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:38:35,958 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:38:35,958 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:38:37,437 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:38:37,826 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:38:37,826 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:38:37,827 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:38:37,828 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:38:37,960 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:38:39,960 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:38:40,097 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:38:40,097 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:38:40,098 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:38:40,099 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:38:40,962 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:38:41,963 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:38:42,485 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:38:42,485 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:38:42,486 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:38:42,486 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:38:42,488 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:38:42,965 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:38:44,754 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:38:44,755 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:38:44,755 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:38:44,757 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:38:44,966 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:38:44,966 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:38:45,024 DEBUG   SenderThread:3563843 [sender.py:send():379] send: stats
+2024-06-11 22:38:46,967 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:38:47,097 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:38:47,098 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:38:47,098 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:38:47,099 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:38:47,550 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-11 22:38:47,551 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 22:38:47,552 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-11 22:38:47,779 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:38:47,968 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:38:48,969 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:38:49,465 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:38:49,466 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:38:49,466 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:38:49,467 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:38:49,970 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:38:50,971 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:38:51,805 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:38:51,805 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:38:51,805 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:38:51,807 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:38:51,972 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:38:52,807 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:38:54,076 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:38:54,076 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:38:54,076 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:38:54,078 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:38:54,974 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:38:54,974 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:38:56,456 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:38:56,457 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:38:56,457 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:38:56,459 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:38:56,975 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:38:56,976 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:38:58,459 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:38:58,845 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:38:58,846 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:38:58,846 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:38:58,848 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:38:58,977 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:38:58,978 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:00,978 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:01,116 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:39:01,116 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:39:01,116 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:39:01,118 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:39:01,979 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:39:02,550 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-11 22:39:02,551 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-11 22:39:02,551 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 22:39:02,980 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:03,460 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:39:03,501 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:39:03,502 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:39:03,502 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:39:03,503 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:39:03,981 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:39:04,982 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:05,788 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:39:05,789 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:39:05,789 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:39:05,791 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:39:05,983 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:39:06,984 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:08,179 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:39:08,180 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:39:08,180 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:39:08,182 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:39:08,985 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:39:09,182 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:39:10,452 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:39:10,453 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:39:10,453 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:39:10,454 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:39:10,987 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:39:10,987 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:12,845 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:39:12,846 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:39:12,846 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:39:12,847 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:39:12,989 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:39:12,989 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:14,848 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:39:14,990 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:15,025 DEBUG   SenderThread:3563843 [sender.py:send():379] send: stats
+2024-06-11 22:39:15,117 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:39:15,117 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:39:15,118 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:39:15,119 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:39:15,991 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:39:16,991 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:17,504 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:39:17,505 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:39:17,505 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:39:17,507 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:39:17,550 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-11 22:39:17,551 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 22:39:17,551 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-11 22:39:17,992 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:39:18,993 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:19,922 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:39:19,961 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:39:19,962 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:39:19,963 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:39:19,964 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:39:19,995 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:39:20,995 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:22,569 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:39:22,570 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:39:22,570 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:39:22,572 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:39:22,997 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:39:24,841 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:39:24,842 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:39:24,842 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:39:24,843 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:39:24,998 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:39:24,999 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:25,844 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:39:27,000 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:27,233 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:39:27,234 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:39:27,234 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:39:27,235 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:39:28,001 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:39:29,002 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:29,504 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:39:29,505 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:39:29,505 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:39:29,507 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:39:30,003 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:39:31,003 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:31,507 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:39:31,889 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:39:31,889 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:39:31,890 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:39:31,891 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:39:32,005 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:39:32,551 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-11 22:39:32,551 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 22:39:32,551 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-11 22:39:33,005 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:34,319 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:39:34,320 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:39:34,320 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:39:34,321 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:39:35,007 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:39:36,506 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:39:36,507 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:39:36,507 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:39:36,508 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:39:36,508 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:39:37,008 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:39:37,009 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:38,947 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:39:38,948 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:39:38,948 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:39:38,949 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:39:39,010 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:39:39,010 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:41,011 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:41,221 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:39:41,222 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:39:41,223 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:39:41,224 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:39:42,013 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:39:42,224 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:39:43,013 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:43,613 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:39:43,613 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:39:43,613 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:39:43,615 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:39:44,014 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:39:45,015 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:45,027 DEBUG   SenderThread:3563843 [sender.py:send():379] send: stats
+2024-06-11 22:39:45,887 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:39:45,887 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:39:45,887 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:39:45,889 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:39:46,016 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:39:47,017 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:47,551 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-11 22:39:47,551 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-11 22:39:47,551 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 22:39:47,772 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:39:48,320 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:39:48,321 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:39:48,321 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:39:48,322 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:39:49,018 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:39:50,562 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:39:50,563 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:39:50,563 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:39:50,564 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:39:51,020 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:39:51,020 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:52,901 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:39:52,901 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:39:52,902 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:39:52,902 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:39:52,903 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:39:53,021 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:39:53,022 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:55,022 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:55,228 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:39:55,229 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:39:55,229 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:39:55,230 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:39:56,023 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:39:57,024 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:57,609 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:39:57,610 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:39:57,610 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:39:57,612 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:39:58,025 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:39:58,612 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:39:59,026 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:39:59,879 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:39:59,879 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:39:59,880 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:39:59,881 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:40:00,027 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:40:01,027 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:40:02,254 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:40:02,255 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:40:02,255 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:40:02,256 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:40:02,551 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-11 22:40:02,551 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-11 22:40:02,551 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 22:40:03,029 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:40:03,784 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:40:04,691 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:40:04,692 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:40:04,692 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:40:04,694 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:40:05,030 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:40:05,031 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:40:06,919 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:40:06,920 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:40:06,920 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:40:06,921 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:40:07,033 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:40:07,033 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:40:08,922 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:40:09,034 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:40:09,269 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:40:09,270 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:40:09,270 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:40:09,271 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:40:10,035 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:40:11,036 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:40:11,595 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:40:11,596 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:40:11,596 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:40:11,598 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:40:12,037 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:40:13,037 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:40:13,991 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:40:13,991 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:40:13,992 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:40:13,992 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:40:13,993 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:40:14,038 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:40:15,028 DEBUG   SenderThread:3563843 [sender.py:send():379] send: stats
+2024-06-11 22:40:15,039 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:40:16,264 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:40:16,264 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:40:16,264 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:40:16,267 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:40:17,041 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:40:17,551 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-11 22:40:17,551 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 22:40:17,551 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-11 22:40:18,699 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:40:18,700 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:40:18,700 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:40:18,702 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:40:19,042 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:40:19,043 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:40:19,702 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:40:20,930 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:40:20,931 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:40:20,931 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:40:20,933 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:40:21,044 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:40:21,044 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:40:23,045 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:40:23,324 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:40:23,324 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:40:23,324 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:40:23,326 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:40:24,046 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:40:25,047 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:40:25,326 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:40:25,548 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:40:25,548 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:40:25,549 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:40:25,550 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:40:26,048 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:40:27,048 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:40:27,999 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:40:27,999 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:40:27,999 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:40:28,002 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:40:28,049 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:40:29,050 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:40:30,268 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:40:30,269 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:40:30,269 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:40:30,270 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:40:31,052 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:40:31,271 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:40:32,551 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-11 22:40:32,551 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 22:40:32,553 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-11 22:40:32,704 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:40:32,740 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:40:32,740 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:40:32,741 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:40:33,053 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:40:33,054 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:40:34,974 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:40:34,975 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:40:34,975 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:40:34,977 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:40:35,055 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:40:35,055 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:40:36,978 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:40:37,056 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:40:37,320 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:40:37,321 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:40:37,321 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:40:37,323 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:40:38,057 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:40:39,058 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:40:39,712 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:40:39,713 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:40:39,713 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:40:39,715 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:40:40,059 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:40:41,060 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:40:41,940 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:40:41,942 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:40:41,942 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:40:41,943 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:40:42,061 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:40:42,944 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:40:43,061 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:40:44,380 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:40:44,381 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:40:44,381 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:40:44,383 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:40:45,029 DEBUG   SenderThread:3563843 [sender.py:send():379] send: stats
+2024-06-11 22:40:45,063 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:40:46,651 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:40:46,652 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:40:46,652 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:40:46,653 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:40:47,064 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:40:47,065 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:40:47,551 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-11 22:40:47,551 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 22:40:47,553 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-11 22:40:48,749 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:40:49,066 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:40:49,083 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:40:49,084 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:40:49,084 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:40:49,086 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:40:50,067 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:40:51,068 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:40:51,313 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:40:51,314 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:40:51,314 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:40:51,316 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:40:52,069 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:40:53,070 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:40:53,698 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:40:53,699 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:40:53,699 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:40:53,701 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:40:54,071 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:40:54,701 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:40:55,071 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:40:55,968 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:40:55,968 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:40:55,969 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:40:55,970 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:40:56,072 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:40:57,073 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:40:58,309 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:40:58,310 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:40:58,310 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:40:58,313 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:40:59,074 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:41:00,313 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:41:00,637 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:41:00,638 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:41:00,638 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:41:00,640 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:41:01,076 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:41:01,076 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:41:02,551 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-11 22:41:02,551 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 22:41:02,552 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-11 22:41:03,059 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:41:03,060 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:41:03,060 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:41:03,061 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:41:03,078 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:41:03,078 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:41:05,079 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:41:06,062 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:41:09,081 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:41:11,072 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:41:15,033 DEBUG   SenderThread:3563843 [sender.py:send():379] send: stats
+2024-06-11 22:41:16,383 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:41:17,551 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-11 22:41:17,552 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 22:41:17,554 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-11 22:41:19,087 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:41:21,088 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:41:22,095 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:41:27,095 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:41:29,093 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:41:31,094 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:41:32,203 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:41:32,551 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-11 22:41:32,551 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 22:41:32,552 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-11 22:41:33,095 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:41:35,096 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:41:37,097 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:41:37,216 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:41:39,098 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:41:41,099 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:41:42,945 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:41:42,993 DEBUG   SenderThread:3563843 [sender.py:send():379] send: files
+2024-06-11 22:41:42,993 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file media/images/test_100_d43673ee1542b277eb92.png with policy now
+2024-06-11 22:41:42,997 DEBUG   SenderThread:3563843 [sender.py:send():379] send: files
+2024-06-11 22:41:42,997 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file media/images/test_100_93d527d6ca88915327d4.png with policy now
+2024-06-11 22:41:43,001 DEBUG   SenderThread:3563843 [sender.py:send():379] send: files
+2024-06-11 22:41:43,002 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file media/images/test_100_9730482004886c3467ac.png with policy now
+2024-06-11 22:41:43,003 DEBUG   SenderThread:3563843 [sender.py:send():379] send: files
+2024-06-11 22:41:43,003 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file media/images/test_100_d648734c34758771e68f.png with policy now
+2024-06-11 22:41:43,100 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:41:43,101 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_created():271] file/dir created: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/media/images/test_100_93d527d6ca88915327d4.png
+2024-06-11 22:41:43,101 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_created():271] file/dir created: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/media/images/test_100_d43673ee1542b277eb92.png
+2024-06-11 22:41:43,101 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_created():271] file/dir created: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/media/images/test_100_d648734c34758771e68f.png
+2024-06-11 22:41:43,101 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_created():271] file/dir created: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/media/images/test_100_9730482004886c3467ac.png
+2024-06-11 22:41:43,101 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/media/images
+2024-06-11 22:41:43,145 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-11 22:41:43,146 DEBUG   SenderThread:3563843 [sender.py:send():379] send: history
+2024-06-11 22:41:43,146 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 22:41:43,147 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:41:43,147 DEBUG   SenderThread:3563843 [sender.py:send():379] send: telemetry
+2024-06-11 22:41:43,147 DEBUG   SenderThread:3563843 [sender.py:send():379] send: exit
+2024-06-11 22:41:43,147 INFO    SenderThread:3563843 [sender.py:send_exit():586] handling exit code: 0
+2024-06-11 22:41:43,147 INFO    SenderThread:3563843 [sender.py:send_exit():588] handling runtime: 328
+2024-06-11 22:41:43,148 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:41:43,148 INFO    SenderThread:3563843 [sender.py:send_exit():594] send defer
+2024-06-11 22:41:43,148 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: defer
+2024-06-11 22:41:43,149 INFO    HandlerThread:3563843 [handler.py:handle_request_defer():172] handle defer: 0
+2024-06-11 22:41:43,149 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: defer
+2024-06-11 22:41:43,149 INFO    SenderThread:3563843 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-06-11 22:41:43,149 INFO    SenderThread:3563843 [sender.py:transition_state():614] send defer: 1
+2024-06-11 22:41:43,149 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: defer
+2024-06-11 22:41:43,149 INFO    HandlerThread:3563843 [handler.py:handle_request_defer():172] handle defer: 1
+2024-06-11 22:41:43,149 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: defer
+2024-06-11 22:41:43,149 INFO    SenderThread:3563843 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-06-11 22:41:43,149 INFO    SenderThread:3563843 [sender.py:transition_state():614] send defer: 2
+2024-06-11 22:41:43,149 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: defer
+2024-06-11 22:41:43,149 INFO    HandlerThread:3563843 [handler.py:handle_request_defer():172] handle defer: 2
+2024-06-11 22:41:43,149 INFO    HandlerThread:3563843 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-11 22:41:43,149 DEBUG   SystemMonitor:3563843 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-11 22:41:43,150 DEBUG   SystemMonitor:3563843 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-11 22:41:43,154 INFO    HandlerThread:3563843 [interfaces.py:finish():202] Joined cpu monitor
+2024-06-11 22:41:43,154 INFO    HandlerThread:3563843 [interfaces.py:finish():202] Joined disk monitor
+2024-06-11 22:41:43,173 INFO    HandlerThread:3563843 [interfaces.py:finish():202] Joined gpu monitor
+2024-06-11 22:41:43,173 INFO    HandlerThread:3563843 [interfaces.py:finish():202] Joined memory monitor
+2024-06-11 22:41:43,174 INFO    HandlerThread:3563843 [interfaces.py:finish():202] Joined network monitor
+2024-06-11 22:41:43,174 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: defer
+2024-06-11 22:41:43,174 INFO    SenderThread:3563843 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-06-11 22:41:43,174 INFO    SenderThread:3563843 [sender.py:transition_state():614] send defer: 3
+2024-06-11 22:41:43,174 DEBUG   SenderThread:3563843 [sender.py:send():379] send: stats
+2024-06-11 22:41:43,174 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: defer
+2024-06-11 22:41:43,175 INFO    HandlerThread:3563843 [handler.py:handle_request_defer():172] handle defer: 3
+2024-06-11 22:41:43,175 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: defer
+2024-06-11 22:41:43,175 INFO    SenderThread:3563843 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-06-11 22:41:43,175 INFO    SenderThread:3563843 [sender.py:transition_state():614] send defer: 4
+2024-06-11 22:41:43,175 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: defer
+2024-06-11 22:41:43,175 INFO    HandlerThread:3563843 [handler.py:handle_request_defer():172] handle defer: 4
+2024-06-11 22:41:43,175 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: defer
+2024-06-11 22:41:43,175 INFO    SenderThread:3563843 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-06-11 22:41:43,175 INFO    SenderThread:3563843 [sender.py:transition_state():614] send defer: 5
+2024-06-11 22:41:43,175 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: defer
+2024-06-11 22:41:43,176 INFO    HandlerThread:3563843 [handler.py:handle_request_defer():172] handle defer: 5
+2024-06-11 22:41:43,176 DEBUG   SenderThread:3563843 [sender.py:send():379] send: summary
+2024-06-11 22:41:43,177 INFO    SenderThread:3563843 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-11 22:41:43,177 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: defer
+2024-06-11 22:41:43,177 INFO    SenderThread:3563843 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-06-11 22:41:43,177 INFO    SenderThread:3563843 [sender.py:transition_state():614] send defer: 6
+2024-06-11 22:41:43,177 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: defer
+2024-06-11 22:41:43,177 INFO    HandlerThread:3563843 [handler.py:handle_request_defer():172] handle defer: 6
+2024-06-11 22:41:43,177 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: defer
+2024-06-11 22:41:43,178 INFO    SenderThread:3563843 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-06-11 22:41:43,181 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: status_report
+2024-06-11 22:41:43,453 INFO    SenderThread:3563843 [sender.py:transition_state():614] send defer: 7
+2024-06-11 22:41:43,453 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: defer
+2024-06-11 22:41:43,453 INFO    HandlerThread:3563843 [handler.py:handle_request_defer():172] handle defer: 7
+2024-06-11 22:41:43,453 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: defer
+2024-06-11 22:41:43,453 INFO    SenderThread:3563843 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-06-11 22:41:44,101 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/config.yaml
+2024-06-11 22:41:44,102 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:41:44,146 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: poll_exit
+2024-06-11 22:41:44,208 INFO    SenderThread:3563843 [sender.py:transition_state():614] send defer: 8
+2024-06-11 22:41:44,208 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: poll_exit
+2024-06-11 22:41:44,208 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: defer
+2024-06-11 22:41:44,208 INFO    HandlerThread:3563843 [handler.py:handle_request_defer():172] handle defer: 8
+2024-06-11 22:41:44,209 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: defer
+2024-06-11 22:41:44,209 INFO    SenderThread:3563843 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-06-11 22:41:44,209 INFO    SenderThread:3563843 [job_builder.py:build():318] Attempting to build job artifact
+2024-06-11 22:41:44,210 INFO    SenderThread:3563843 [job_builder.py:_get_source_type():455] is repo sourced job
+2024-06-11 22:41:44,239 INFO    SenderThread:3563843 [job_builder.py:build():431] adding wandb-job metadata file
+2024-06-11 22:41:44,262 INFO    wandb-upload_1:3563843 [upload_job.py:push():131] Uploaded file /net/tscratch/people/plgas2000/slurm_jobdir/758175/tmp/tmpngz5lgvywandb/wrt8i9h0-media/images/test_100_9730482004886c3467ac.png
+2024-06-11 22:41:44,263 INFO    wandb-upload_0:3563843 [upload_job.py:push():131] Uploaded file /net/tscratch/people/plgas2000/slurm_jobdir/758175/tmp/tmpngz5lgvywandb/vw2jsb1p-media/images/test_100_d43673ee1542b277eb92.png
+2024-06-11 22:41:44,283 INFO    SenderThread:3563843 [sender.py:transition_state():614] send defer: 9
+2024-06-11 22:41:44,283 DEBUG   SenderThread:3563843 [sender.py:send():379] send: artifact
+2024-06-11 22:41:44,283 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: defer
+2024-06-11 22:41:44,285 INFO    HandlerThread:3563843 [handler.py:handle_request_defer():172] handle defer: 9
+2024-06-11 22:41:44,312 INFO    wandb-upload_3:3563843 [upload_job.py:push():131] Uploaded file /net/tscratch/people/plgas2000/slurm_jobdir/758175/tmp/tmpngz5lgvywandb/b6lpplsw-media/images/test_100_93d527d6ca88915327d4.png
+2024-06-11 22:41:44,312 INFO    wandb-upload_2:3563843 [upload_job.py:push():131] Uploaded file /net/tscratch/people/plgas2000/slurm_jobdir/758175/tmp/tmpngz5lgvywandb/e4netq2a-media/images/test_100_d648734c34758771e68f.png
+2024-06-11 22:41:45,102 INFO    Thread-12 :3563843 [dir_watcher.py:_on_file_modified():288] file/dir modified: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:41:45,121 INFO    SenderThread:3563843 [sender.py:send_artifact():1468] sent artifact job-https___github.com_janekfilipecki_zzsn-project.git_scripts_train_ziplora_train_dreambooth_ziplora_sdxl.py - {'id': 'QXJ0aWZhY3Q6ODU4MjI4NTYx', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3OTY3MDMxNg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODY1MjUzMTI3', 'versionIndex': 2}}}
+2024-06-11 22:41:45,121 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: defer
+2024-06-11 22:41:45,121 INFO    SenderThread:3563843 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-06-11 22:41:45,121 INFO    SenderThread:3563843 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-06-11 22:41:45,146 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: poll_exit
+2024-06-11 22:41:45,611 INFO    wandb-upload_1:3563843 [upload_job.py:push():131] Uploaded file /net/tscratch/people/plgas2000/slurm_jobdir/758175/tmp/tmpngz5lgvywandb/incoy8b3-media/images/test_100_d43673ee1542b277eb92.png
+2024-06-11 22:41:45,641 INFO    wandb-upload_0:3563843 [upload_job.py:push():131] Uploaded file /net/tscratch/people/plgas2000/slurm_jobdir/758175/tmp/tmpngz5lgvywandb/11fvncx3-media/images/test_100_9730482004886c3467ac.png
+2024-06-11 22:41:46,103 INFO    SenderThread:3563843 [dir_watcher.py:finish():388] scan: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files
+2024-06-11 22:41:46,103 INFO    SenderThread:3563843 [dir_watcher.py:finish():402] scan save: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json wandb-summary.json
+2024-06-11 22:41:46,103 INFO    SenderThread:3563843 [dir_watcher.py:finish():402] scan save: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/config.yaml config.yaml
+2024-06-11 22:41:46,105 INFO    SenderThread:3563843 [dir_watcher.py:finish():402] scan save: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log output.log
+2024-06-11 22:41:46,107 INFO    SenderThread:3563843 [dir_watcher.py:finish():402] scan save: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/conda-environment.yaml conda-environment.yaml
+2024-06-11 22:41:46,110 INFO    SenderThread:3563843 [dir_watcher.py:finish():402] scan save: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-metadata.json wandb-metadata.json
+2024-06-11 22:41:46,110 INFO    SenderThread:3563843 [dir_watcher.py:finish():402] scan save: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/requirements.txt requirements.txt
+2024-06-11 22:41:46,114 INFO    SenderThread:3563843 [dir_watcher.py:finish():402] scan save: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/media/images/test_100_d43673ee1542b277eb92.png media/images/test_100_d43673ee1542b277eb92.png
+2024-06-11 22:41:46,114 INFO    SenderThread:3563843 [dir_watcher.py:finish():402] scan save: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/media/images/validation_7_3c2222eda040d519e1d5.png media/images/validation_7_3c2222eda040d519e1d5.png
+2024-06-11 22:41:46,115 INFO    SenderThread:3563843 [dir_watcher.py:finish():402] scan save: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/media/images/test_100_d648734c34758771e68f.png media/images/test_100_d648734c34758771e68f.png
+2024-06-11 22:41:46,115 INFO    SenderThread:3563843 [dir_watcher.py:finish():402] scan save: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/media/images/validation_7_0a66bef7b25452285957.png media/images/validation_7_0a66bef7b25452285957.png
+2024-06-11 22:41:46,115 INFO    SenderThread:3563843 [dir_watcher.py:finish():402] scan save: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/media/images/test_100_93d527d6ca88915327d4.png media/images/test_100_93d527d6ca88915327d4.png
+2024-06-11 22:41:46,115 INFO    SenderThread:3563843 [dir_watcher.py:finish():402] scan save: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/media/images/validation_7_dd6fa693d49645eae7ab.png media/images/validation_7_dd6fa693d49645eae7ab.png
+2024-06-11 22:41:46,115 INFO    SenderThread:3563843 [dir_watcher.py:finish():402] scan save: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/media/images/validation_7_74ab8e1fa1bb7e3338c0.png media/images/validation_7_74ab8e1fa1bb7e3338c0.png
+2024-06-11 22:41:46,115 INFO    SenderThread:3563843 [dir_watcher.py:finish():402] scan save: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/media/images/test_100_9730482004886c3467ac.png media/images/test_100_9730482004886c3467ac.png
+2024-06-11 22:41:46,115 INFO    SenderThread:3563843 [sender.py:transition_state():614] send defer: 10
+2024-06-11 22:41:46,115 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: poll_exit
+2024-06-11 22:41:46,115 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: defer
+2024-06-11 22:41:46,115 INFO    HandlerThread:3563843 [handler.py:handle_request_defer():172] handle defer: 10
+2024-06-11 22:41:46,116 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: defer
+2024-06-11 22:41:46,116 INFO    SenderThread:3563843 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-06-11 22:41:46,116 INFO    SenderThread:3563843 [file_pusher.py:finish():172] shutting down file pusher
+2024-06-11 22:41:46,146 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: poll_exit
+2024-06-11 22:41:46,146 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: poll_exit
+2024-06-11 22:41:46,524 INFO    wandb-upload_3:3563843 [upload_job.py:push():131] Uploaded file /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/config.yaml
+2024-06-11 22:41:46,537 INFO    wandb-upload_0:3563843 [upload_job.py:push():131] Uploaded file /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/wandb-summary.json
+2024-06-11 22:41:46,570 INFO    wandb-upload_4:3563843 [upload_job.py:push():131] Uploaded file /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/output.log
+2024-06-11 22:41:46,575 INFO    wandb-upload_5:3563843 [upload_job.py:push():131] Uploaded file /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/conda-environment.yaml
+2024-06-11 22:41:46,631 INFO    wandb-upload_6:3563843 [upload_job.py:push():131] Uploaded file /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/files/requirements.txt
+2024-06-11 22:41:46,964 INFO    wandb-upload_2:3563843 [upload_job.py:push():131] Uploaded file /net/tscratch/people/plgas2000/slurm_jobdir/758175/tmp/tmpngz5lgvywandb/ccy43vpb-media/images/test_100_93d527d6ca88915327d4.png
+2024-06-11 22:41:46,966 INFO    wandb-upload_1:3563843 [upload_job.py:push():131] Uploaded file /net/tscratch/people/plgas2000/slurm_jobdir/758175/tmp/tmpngz5lgvywandb/bs5vyydl-media/images/test_100_d648734c34758771e68f.png
+2024-06-11 22:41:47,147 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: poll_exit
+2024-06-11 22:41:47,147 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: poll_exit
+2024-06-11 22:41:47,166 INFO    Thread-11 :3563843 [sender.py:transition_state():614] send defer: 11
+2024-06-11 22:41:47,167 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: defer
+2024-06-11 22:41:47,167 INFO    HandlerThread:3563843 [handler.py:handle_request_defer():172] handle defer: 11
+2024-06-11 22:41:47,167 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: defer
+2024-06-11 22:41:47,167 INFO    SenderThread:3563843 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-06-11 22:41:47,167 INFO    SenderThread:3563843 [file_pusher.py:join():178] waiting for file pusher
+2024-06-11 22:41:47,189 INFO    SenderThread:3563843 [sender.py:transition_state():614] send defer: 12
+2024-06-11 22:41:47,189 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: defer
+2024-06-11 22:41:47,189 INFO    HandlerThread:3563843 [handler.py:handle_request_defer():172] handle defer: 12
+2024-06-11 22:41:47,189 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: defer
+2024-06-11 22:41:47,189 INFO    SenderThread:3563843 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-06-11 22:41:47,189 INFO    SenderThread:3563843 [file_stream.py:finish():614] file stream finish called
+2024-06-11 22:41:47,888 INFO    SenderThread:3563843 [file_stream.py:finish():618] file stream finish is done
+2024-06-11 22:41:47,888 INFO    SenderThread:3563843 [sender.py:transition_state():614] send defer: 13
+2024-06-11 22:41:47,888 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: defer
+2024-06-11 22:41:47,888 INFO    HandlerThread:3563843 [handler.py:handle_request_defer():172] handle defer: 13
+2024-06-11 22:41:47,888 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: defer
+2024-06-11 22:41:47,888 INFO    SenderThread:3563843 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-06-11 22:41:47,888 INFO    SenderThread:3563843 [sender.py:transition_state():614] send defer: 14
+2024-06-11 22:41:47,888 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: defer
+2024-06-11 22:41:47,888 DEBUG   SenderThread:3563843 [sender.py:send():379] send: final
+2024-06-11 22:41:47,888 INFO    HandlerThread:3563843 [handler.py:handle_request_defer():172] handle defer: 14
+2024-06-11 22:41:47,889 DEBUG   SenderThread:3563843 [sender.py:send():379] send: footer
+2024-06-11 22:41:47,889 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: defer
+2024-06-11 22:41:47,889 INFO    SenderThread:3563843 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-06-11 22:41:47,889 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: poll_exit
+2024-06-11 22:41:47,889 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: poll_exit
+2024-06-11 22:41:47,890 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-11 22:41:47,890 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: server_info
+2024-06-11 22:41:47,890 DEBUG   SenderThread:3563843 [sender.py:send_request():406] send_request: server_info
+2024-06-11 22:41:47,931 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: get_summary
+2024-06-11 22:41:47,931 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: sampled_history
+2024-06-11 22:41:48,053 DEBUG   HandlerThread:3563843 [handler.py:handle_request():146] handle_request: shutdown
+2024-06-11 22:41:48,054 INFO    HandlerThread:3563843 [handler.py:finish():866] shutting down handler
+2024-06-11 22:41:48,890 INFO    WriterThread:3563843 [datastore.py:close():296] close: /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240611_223614-qupj2jwg/run-qupj2jwg.wandb
+2024-06-11 22:41:49,053 INFO    SenderThread:3563843 [sender.py:finish():1546] shutting down sender
+2024-06-11 22:41:49,053 INFO    SenderThread:3563843 [file_pusher.py:finish():172] shutting down file pusher
+2024-06-11 22:41:49,053 INFO    SenderThread:3563843 [file_pusher.py:join():178] waiting for file pusher

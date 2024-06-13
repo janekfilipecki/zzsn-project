@@ -1,0 +1,143 @@
+06/10/2024 02:06:03 - INFO - __main__ - ***** Running training *****
+06/10/2024 02:06:03 - INFO - __main__ -   Num examples = 7
+06/10/2024 02:06:03 - INFO - __main__ -   Num batches each epoch = 7
+06/10/2024 02:06:03 - INFO - __main__ -   Num Epochs = 15
+06/10/2024 02:06:03 - INFO - __main__ -   Instantaneous batch size per device = 1
+06/10/2024 02:06:03 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 1
+06/10/2024 02:06:03 - INFO - __main__ -   Gradient Accumulation steps = 1
+06/10/2024 02:06:03 - INFO - __main__ -   Total optimization steps = 100
+
+
+
+
+
+
+Steps:   7%|▋         | 7/100 [00:17<03:38,  2.35s/it, loss=111, loss_1=0.00282, loss_2=0.00378, loss_3=111, lr=0.001]06/10/2024 02:06:21 - INFO - __main__ - Running validation...
+ Generating 4 images with prompt: a sks dog in crt style.
+{'image_encoder', 'feature_extractor'} was not found in config. Values will be initialized to default values.
+                                                                     Loaded tokenizer as CLIPTokenizer from `tokenizer` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loaded tokenizer_2 as CLIPTokenizer from `tokenizer_2` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+                                                                             {'timestep_type', 'sigma_max', 'sigma_min'} was not found in config. Values will be initialized to default values.
+Loaded scheduler as EulerDiscreteScheduler from `scheduler` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00, 61.42it/s]
+{'use_lu_lambdas', 'thresholding', 'solver_type', 'dynamic_thresholding_ratio', 'euler_at_final', 'variance_type', 'algorithm_type', 'solver_order', 'lower_order_final', 'lambda_min_clipped'} was not found in config. Values will be initialized to default values.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Steps:  77%|███████▋  | 77/100 [03:51<00:53,  2.33s/it, loss=95.8, loss_1=0.00132, loss_2=0.0025, loss_3=95.8, lr=0.001]06/10/2024 02:09:55 - INFO - __main__ - Running validation...
+ Generating 4 images with prompt: a sks dog in crt style.
+{'image_encoder', 'feature_extractor'} was not found in config. Values will be initialized to default values.
+                                                                     Loaded tokenizer as CLIPTokenizer from `tokenizer` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loaded tokenizer_2 as CLIPTokenizer from `tokenizer_2` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+{'timestep_type', 'sigma_max', 'sigma_min'} was not found in config. Values will be initialized to default values.
+Loaded scheduler as EulerDiscreteScheduler from `scheduler` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00, 71.78it/s]
+{'use_lu_lambdas', 'thresholding', 'solver_type', 'dynamic_thresholding_ratio', 'euler_at_final', 'variance_type', 'algorithm_type', 'solver_order', 'lower_order_final', 'lambda_min_clipped'} was not found in config. Values will be initialized to default values.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Steps: 100%|██████████| 100/100 [05:32<00:00,  2.37s/it, loss=91.3, loss_1=0.000699, loss_2=0.00168, loss_3=91.3, lr=0.001]Model weights saved in ./models/ziplora_style3_dog6_lr_1e_3_2024-06-10_02-05-13/pytorch_lora_weights.safetensors
+{'image_encoder', 'feature_extractor'} was not found in config. Values will be initialized to default values.
+                                                                     Loaded tokenizer as CLIPTokenizer from `tokenizer` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loaded text_encoder as CLIPTextModel from `text_encoder` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+                                                                             {'attention_type', 'reverse_transformer_layers_per_block', 'dropout'} was not found in config. Values will be initialized to default values.
+Loaded unet as UNet2DConditionModel from `unet` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+                                                                             Loaded tokenizer_2 as CLIPTokenizer from `tokenizer_2` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loaded text_encoder_2 as CLIPTextModelWithProjection from `text_encoder_2` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+                                                                             {'timestep_type', 'sigma_max', 'sigma_min'} was not found in config. Values will be initialized to default values.
+Loaded scheduler as EulerDiscreteScheduler from `scheduler` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loading pipeline components...: 100%|██████████| 7/7 [00:11<00:00,  1.58s/it]
+{'use_lu_lambdas', 'thresholding', 'solver_type', 'dynamic_thresholding_ratio', 'euler_at_final', 'variance_type', 'algorithm_type', 'solver_order', 'lower_order_final', 'lambda_min_clipped'} was not found in config. Values will be initialized to default values.
+
+100%|██████████| 25/25 [00:03<00:00,  7.81it/s]
+
+100%|██████████| 25/25 [00:03<00:00,  7.81it/s]
+
+100%|██████████| 25/25 [00:03<00:00,  7.81it/s]
+
+100%|██████████| 25/25 [00:03<00:00,  7.80it/s]

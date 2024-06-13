@@ -1,0 +1,751 @@
+06/11/2024 20:24:35 - INFO - __main__ - ***** Running training *****
+06/11/2024 20:24:35 - INFO - __main__ -   Num examples = 7
+06/11/2024 20:24:35 - INFO - __main__ -   Num batches each epoch = 7
+06/11/2024 20:24:35 - INFO - __main__ -   Num Epochs = 143
+06/11/2024 20:24:35 - INFO - __main__ -   Instantaneous batch size per device = 1
+06/11/2024 20:24:35 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 1
+06/11/2024 20:24:35 - INFO - __main__ -   Gradient Accumulation steps = 1
+06/11/2024 20:24:35 - INFO - __main__ -   Total optimization steps = 1000
+
+
+
+
+Steps:   1%|          | 7/1000 [00:11<23:54,  1.44s/it, loss=0.262, lr=5e-5]06/11/2024 20:24:46 - INFO - __main__ - Running validation...
+ Generating 4 images with prompt: a hat in the crt style.
+{'feature_extractor', 'image_encoder'} was not found in config. Values will be initialized to default values.
+                                                                     Loaded tokenizer_2 as CLIPTokenizer from `tokenizer_2` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+{'sigma_max', 'sigma_min', 'timestep_type'} was not found in config. Values will be initialized to default values.
+Loaded scheduler as EulerDiscreteScheduler from `scheduler` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loaded tokenizer as CLIPTokenizer from `tokenizer` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00, 59.99it/s]
+{'dynamic_thresholding_ratio', 'algorithm_type', 'euler_at_final', 'lambda_min_clipped', 'use_lu_lambdas', 'solver_order', 'lower_order_final', 'solver_type', 'thresholding', 'variance_type'} was not found in config. Values will be initialized to default values.
+/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/utils/checkpoint.py:90: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Steps:  36%|███▌      | 357/1000 [08:53<14:42,  1.37s/it, loss=0.0153, lr=5e-5] 06/11/2024 20:33:28 - INFO - __main__ - Running validation...
+ Generating 4 images with prompt: a hat in the crt style.
+{'feature_extractor', 'image_encoder'} was not found in config. Values will be initialized to default values.
+                                                                     Loaded tokenizer_2 as CLIPTokenizer from `tokenizer_2` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+{'sigma_max', 'sigma_min', 'timestep_type'} was not found in config. Values will be initialized to default values.
+Loaded scheduler as EulerDiscreteScheduler from `scheduler` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loaded tokenizer as CLIPTokenizer from `tokenizer` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00, 58.00it/s]
+{'dynamic_thresholding_ratio', 'algorithm_type', 'euler_at_final', 'lambda_min_clipped', 'use_lu_lambdas', 'solver_order', 'lower_order_final', 'solver_type', 'thresholding', 'variance_type'} was not found in config. Values will be initialized to default values.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Steps:  50%|█████     | 500/1000 [12:52<11:33,  1.39s/it, loss=0.307, lr=5e-5]06/11/2024 20:37:27 - INFO - accelerate.accelerator - Saving current state to ./models/dreambooth_lora_sdxl_style3_sketch_r256_2024-06-11_20-23-49/checkpoint-500
+Model weights saved in ./models/dreambooth_lora_sdxl_style3_sketch_r256_2024-06-11_20-23-49/checkpoint-500/pytorch_lora_weights.safetensors
+06/11/2024 20:37:31 - INFO - accelerate.checkpointing - Optimizer state saved in models/dreambooth_lora_sdxl_style3_sketch_r256_2024-06-11_20-23-49/checkpoint-500/optimizer.bin
+06/11/2024 20:37:31 - INFO - accelerate.checkpointing - Scheduler state saved in models/dreambooth_lora_sdxl_style3_sketch_r256_2024-06-11_20-23-49/checkpoint-500/scheduler.bin
+06/11/2024 20:37:31 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in models/dreambooth_lora_sdxl_style3_sketch_r256_2024-06-11_20-23-49/checkpoint-500/sampler.bin
+06/11/2024 20:37:31 - INFO - accelerate.checkpointing - Gradient scaler state saved in models/dreambooth_lora_sdxl_style3_sketch_r256_2024-06-11_20-23-49/checkpoint-500/scaler.pt
+06/11/2024 20:37:31 - INFO - accelerate.checkpointing - Random states saved in models/dreambooth_lora_sdxl_style3_sketch_r256_2024-06-11_20-23-49/checkpoint-500/random_states_0.pkl
+06/11/2024 20:37:31 - INFO - __main__ - Saved state to ./models/dreambooth_lora_sdxl_style3_sketch_r256_2024-06-11_20-23-49/checkpoint-500
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Steps:  71%|███████   | 707/1000 [17:40<06:41,  1.37s/it, loss=0.269, lr=5e-5]06/11/2024 20:42:15 - INFO - __main__ - Running validation...
+ Generating 4 images with prompt: a hat in the crt style.
+{'feature_extractor', 'image_encoder'} was not found in config. Values will be initialized to default values.
+                                                                     Loaded tokenizer_2 as CLIPTokenizer from `tokenizer_2` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+{'sigma_max', 'sigma_min', 'timestep_type'} was not found in config. Values will be initialized to default values.
+Loaded scheduler as EulerDiscreteScheduler from `scheduler` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loaded tokenizer as CLIPTokenizer from `tokenizer` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00, 59.58it/s]
+{'dynamic_thresholding_ratio', 'algorithm_type', 'euler_at_final', 'lambda_min_clipped', 'use_lu_lambdas', 'solver_order', 'lower_order_final', 'solver_type', 'thresholding', 'variance_type'} was not found in config. Values will be initialized to default values.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Steps: 100%|██████████| 1000/1000 [25:06<00:00,  1.36s/it, loss=0.00255, lr=5e-5]06/11/2024 20:49:41 - INFO - accelerate.accelerator - Saving current state to ./models/dreambooth_lora_sdxl_style3_sketch_r256_2024-06-11_20-23-49/checkpoint-1000
+Model weights saved in ./models/dreambooth_lora_sdxl_style3_sketch_r256_2024-06-11_20-23-49/checkpoint-1000/pytorch_lora_weights.safetensors
+06/11/2024 20:49:45 - INFO - accelerate.checkpointing - Optimizer state saved in models/dreambooth_lora_sdxl_style3_sketch_r256_2024-06-11_20-23-49/checkpoint-1000/optimizer.bin
+06/11/2024 20:49:45 - INFO - accelerate.checkpointing - Scheduler state saved in models/dreambooth_lora_sdxl_style3_sketch_r256_2024-06-11_20-23-49/checkpoint-1000/scheduler.bin
+06/11/2024 20:49:45 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in models/dreambooth_lora_sdxl_style3_sketch_r256_2024-06-11_20-23-49/checkpoint-1000/sampler.bin
+06/11/2024 20:49:45 - INFO - accelerate.checkpointing - Gradient scaler state saved in models/dreambooth_lora_sdxl_style3_sketch_r256_2024-06-11_20-23-49/checkpoint-1000/scaler.pt
+06/11/2024 20:49:45 - INFO - accelerate.checkpointing - Random states saved in models/dreambooth_lora_sdxl_style3_sketch_r256_2024-06-11_20-23-49/checkpoint-1000/random_states_0.pkl
+06/11/2024 20:49:45 - INFO - __main__ - Saved state to ./models/dreambooth_lora_sdxl_style3_sketch_r256_2024-06-11_20-23-49/checkpoint-1000
+
+Steps: 100%|██████████| 1000/1000 [25:09<00:00,  1.36s/it, loss=0.227, lr=5e-5]  Model weights saved in ./models/dreambooth_lora_sdxl_style3_sketch_r256_2024-06-11_20-23-49/pytorch_lora_weights.safetensors
+{'feature_extractor', 'image_encoder'} was not found in config. Values will be initialized to default values.
+                                                                     Loaded tokenizer_2 as CLIPTokenizer from `tokenizer_2` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loaded text_encoder as CLIPTextModel from `text_encoder` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loading pipeline components...:  43%|████▎     | 3/7 [00:00<00:00,  5.40it/s]{'sigma_max', 'sigma_min', 'timestep_type'} was not found in config. Values will be initialized to default values.
+Loaded scheduler as EulerDiscreteScheduler from `scheduler` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loaded tokenizer as CLIPTokenizer from `tokenizer` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+                                                                             {'dropout', 'reverse_transformer_layers_per_block', 'attention_type'} was not found in config. Values will be initialized to default values.
+Loaded unet as UNet2DConditionModel from `unet` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loading pipeline components...: 100%|██████████| 7/7 [00:11<00:00,  1.66s/it]
+{'dynamic_thresholding_ratio', 'algorithm_type', 'euler_at_final', 'lambda_min_clipped', 'use_lu_lambdas', 'solver_order', 'lower_order_final', 'solver_type', 'thresholding', 'variance_type'} was not found in config. Values will be initialized to default values.
+Loading unet.
+Loading text_encoder.
+/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/loaders/lora.py:708: FutureWarning: `_modify_text_encoder` is deprecated and will be removed in version 0.25. You are using an old version of LoRA backend. This will be deprecated in the next releases in favor of PEFT make sure to install the latest PEFT and transformers packages in the future.
+  deprecate("_modify_text_encoder", "0.25", LORA_DEPRECATION_MESSAGE)
+/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/loaders/lora.py:679: FutureWarning: `_remove_text_encoder_monkey_patch_classmethod` is deprecated and will be removed in version 0.25. You are using an old version of LoRA backend. This will be deprecated in the next releases in favor of PEFT make sure to install the latest PEFT and transformers packages in the future.
+  deprecate("_remove_text_encoder_monkey_patch_classmethod", "0.25", LORA_DEPRECATION_MESSAGE)
+Loading text_encoder_2.
+
+100%|██████████| 25/25 [00:03<00:00,  7.92it/s]
+
+100%|██████████| 25/25 [00:03<00:00,  7.91it/s]
+100%|██████████| 25/25 [00:03<00:00,  7.91it/s]
+
+
+100%|██████████| 25/25 [00:03<00:00,  7.91it/s]

@@ -1,0 +1,246 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.9.19
+    cli_version: 0.16.6
+    framework: huggingface
+    huggingface_version: 4.40.1
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1718133463.0
+    t:
+      1:
+      - 1
+      - 11
+      - 41
+      - 49
+      - 55
+      - 71
+      - 83
+      2:
+      - 1
+      - 11
+      - 41
+      - 49
+      - 55
+      - 71
+      - 83
+      3:
+      - 2
+      - 23
+      - 61
+      4: 3.9.19
+      5: 0.16.6
+      6: 4.40.1
+      8:
+      - 5
+      13: linux-x86_64
+pretrained_model_name_or_path:
+  desc: null
+  value: stabilityai/stable-diffusion-xl-base-1.0
+pretrained_vae_model_name_or_path:
+  desc: null
+  value: null
+lora_name_or_path:
+  desc: null
+  value: ./models/dreambooth_lora_sdxl_dog6_subject_r32_2024-06-11_16-46-47
+lora_name_or_path_2:
+  desc: null
+  value: ./models/dreambooth_lora_sdxl_style3_sketch_r256_2024-06-11_20-23-49
+revision:
+  desc: null
+  value: null
+dataset_name:
+  desc: null
+  value: null
+dataset_config_name:
+  desc: null
+  value: null
+instance_data_dir:
+  desc: null
+  value: ./dataset/dreambooth-main/dataset/dog6
+instance_data_dir_2:
+  desc: null
+  value: ./dataset/styles/style3-sketch
+cache_dir:
+  desc: null
+  value: null
+image_column:
+  desc: null
+  value: image
+caption_column:
+  desc: null
+  value: null
+repeats:
+  desc: null
+  value: 1
+instance_prompt:
+  desc: null
+  value: a sbu dog
+instance_prompt_2:
+  desc: null
+  value: a bicycle in the crt style
+validation_prompt:
+  desc: null
+  value: a sbu dog in the crt style
+num_validation_images:
+  desc: null
+  value: 4
+validation_epochs:
+  desc: null
+  value: 50
+output_dir:
+  desc: null
+  value: ./models/ziplora_style3_rank32_dog6_lambda_0_01_2024-06-11_21-16-49
+seed:
+  desc: null
+  value: 100
+resolution:
+  desc: null
+  value: 1024
+crops_coords_top_left_h:
+  desc: null
+  value: 0
+crops_coords_top_left_w:
+  desc: null
+  value: 0
+center_crop:
+  desc: null
+  value: false
+train_text_encoder:
+  desc: null
+  value: false
+train_batch_size:
+  desc: null
+  value: 1
+sample_batch_size:
+  desc: null
+  value: 4
+num_train_epochs:
+  desc: null
+  value: 15
+max_train_steps:
+  desc: null
+  value: 100
+checkpointing_steps:
+  desc: null
+  value: 500
+checkpoints_total_limit:
+  desc: null
+  value: null
+resume_from_checkpoint:
+  desc: null
+  value: null
+gradient_accumulation_steps:
+  desc: null
+  value: 1
+gradient_checkpointing:
+  desc: null
+  value: true
+init_merger_value:
+  desc: null
+  value: 1.0
+init_merger_value_2:
+  desc: null
+  value: 1.0
+learning_rate:
+  desc: null
+  value: 5.0e-05
+similarity_lambda:
+  desc: null
+  value: 0.01
+text_encoder_lr:
+  desc: null
+  value: 5.0e-06
+scale_lr:
+  desc: null
+  value: false
+lr_scheduler:
+  desc: null
+  value: constant
+snr_gamma:
+  desc: null
+  value: null
+lr_warmup_steps:
+  desc: null
+  value: 0
+lr_num_cycles:
+  desc: null
+  value: 1
+lr_power:
+  desc: null
+  value: 1.0
+dataloader_num_workers:
+  desc: null
+  value: 0
+optimizer:
+  desc: null
+  value: AdamW
+use_8bit_adam:
+  desc: null
+  value: true
+adam_beta1:
+  desc: null
+  value: 0.9
+adam_beta2:
+  desc: null
+  value: 0.999
+prodigy_beta3:
+  desc: null
+  value: null
+prodigy_decouple:
+  desc: null
+  value: true
+adam_weight_decay:
+  desc: null
+  value: 0.0001
+adam_weight_decay_text_encoder:
+  desc: null
+  value: 0.001
+adam_epsilon:
+  desc: null
+  value: 1.0e-08
+prodigy_use_bias_correction:
+  desc: null
+  value: true
+prodigy_safeguard_warmup:
+  desc: null
+  value: true
+max_grad_norm:
+  desc: null
+  value: 1.0
+push_to_hub:
+  desc: null
+  value: false
+hub_token:
+  desc: null
+  value: null
+hub_model_id:
+  desc: null
+  value: null
+logging_dir:
+  desc: null
+  value: logs
+allow_tf32:
+  desc: null
+  value: false
+report_to:
+  desc: null
+  value: wandb
+mixed_precision:
+  desc: null
+  value: fp16
+prior_generation_precision:
+  desc: null
+  value: null
+local_rank:
+  desc: null
+  value: -1
+enable_xformers_memory_efficient_attention:
+  desc: null
+  value: false
+quick_release:
+  desc: null
+  value: false

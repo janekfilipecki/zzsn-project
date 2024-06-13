@@ -1,0 +1,77 @@
+06/09/2024 03:40:30 - INFO - __main__ - ***** Running training *****
+06/09/2024 03:40:30 - INFO - __main__ -   Num examples = 7
+06/09/2024 03:40:30 - INFO - __main__ -   Num batches each epoch = 7
+06/09/2024 03:40:30 - INFO - __main__ -   Num Epochs = 15
+06/09/2024 03:40:30 - INFO - __main__ -   Instantaneous batch size per device = 1
+06/09/2024 03:40:30 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 1
+06/09/2024 03:40:30 - INFO - __main__ -   Gradient Accumulation steps = 1
+06/09/2024 03:40:30 - INFO - __main__ -   Total optimization steps = 100
+Steps:   0%|          | 0/100 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/net/tscratch/people/plgas2000/zzsn-project/scripts/train_ziplora/train_dreambooth_ziplora_sdxl.py", line 1817, in <module>
+    main(args)
+  File "/net/tscratch/people/plgas2000/zzsn-project/scripts/train_ziplora/train_dreambooth_ziplora_sdxl.py", line 1507, in main
+    model_pred_mc = unet(
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/accelerate/utils/operations.py", line 825, in forward
+    return model_forward(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/accelerate/utils/operations.py", line 813, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/amp/autocast_mode.py", line 16, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/models/unet_2d_condition.py", line 1075, in forward
+    sample, res_samples = downsample_block(
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/models/unet_2d_blocks.py", line 1150, in forward
+    hidden_states = attn(
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/models/transformer_2d.py", line 380, in forward
+    hidden_states = torch.utils.checkpoint.checkpoint(
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/_compile.py", line 24, in inner
+    return torch._dynamo.disable(fn, recursive)(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/_dynamo/eval_frame.py", line 489, in _fn
+    return fn(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/_dynamo/external_utils.py", line 17, in inner
+    return fn(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/utils/checkpoint.py", line 489, in checkpoint
+    ret = function(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/models/transformer_2d.py", line 375, in custom_forward
+    return module(*inputs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/models/attention.py", line 323, in forward
+    attn_output = self.attn2(
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/models/attention_processor.py", line 522, in forward
+    return self.processor(
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/diffusers/models/attention_processor.py", line 1144, in __call__
+    hidden_states = xformers.ops.memory_efficient_attention(
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/xformers/ops/fmha/__init__.py", line 247, in memory_efficient_attention
+    return _memory_efficient_attention(
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/xformers/ops/fmha/__init__.py", line 370, in _memory_efficient_attention
+    return _fMHA.apply(
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/torch/autograd/function.py", line 553, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/xformers/ops/fmha/__init__.py", line 61, in forward
+    out, op_ctx = _memory_efficient_attention_forward_requires_grad(
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/xformers/ops/fmha/__init__.py", line 392, in _memory_efficient_attention_forward_requires_grad
+    inp.validate_inputs()
+  File "/net/tscratch/people/plgas2000/.conda/envs/myenv2/lib/python3.9/site-packages/xformers/ops/fmha/common.py", line 123, in validate_inputs
+    raise ValueError(
+ValueError: Query/Key/Value should either all have the same dtype, or (in the quantized case) Key/Value should have dtype torch.int32
+  query.dtype: torch.float32
+  key.dtype  : torch.float16
+  value.dtype: torch.float16

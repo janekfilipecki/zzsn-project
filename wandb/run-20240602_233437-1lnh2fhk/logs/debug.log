@@ -1,0 +1,36 @@
+2024-06-02 23:34:37,094 INFO    MainThread:1807989 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-06-02 23:34:37,094 INFO    MainThread:1807989 [wandb_setup.py:_flush():76] Configure stats pid to 1807989
+2024-06-02 23:34:37,094 INFO    MainThread:1807989 [wandb_setup.py:_flush():76] Loading settings from /net/people/plgrid/plgas2000/.config/wandb/settings
+2024-06-02 23:34:37,094 INFO    MainThread:1807989 [wandb_setup.py:_flush():76] Loading settings from /net/tscratch/people/plgas2000/zzsn-project/wandb/settings
+2024-06-02 23:34:37,094 INFO    MainThread:1807989 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-06-02 23:34:37,094 INFO    MainThread:1807989 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-06-02 23:34:37,094 INFO    MainThread:1807989 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'scripts/train_ziplora/train_dreambooth_ziplora_sdxl.py', 'program_abspath': '/net/tscratch/people/plgas2000/zzsn-project/scripts/train_ziplora/train_dreambooth_ziplora_sdxl.py', 'program': '/net/tscratch/people/plgas2000/zzsn-project/scripts/train_ziplora/train_dreambooth_ziplora_sdxl.py'}
+2024-06-02 23:34:37,094 INFO    MainThread:1807989 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-06-02 23:34:37,094 INFO    MainThread:1807989 [wandb_init.py:_log_setup():521] Logging user logs to /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240602_233437-1lnh2fhk/logs/debug.log
+2024-06-02 23:34:37,094 INFO    MainThread:1807989 [wandb_init.py:_log_setup():522] Logging internal logs to /net/tscratch/people/plgas2000/zzsn-project/wandb/run-20240602_233437-1lnh2fhk/logs/debug-internal.log
+2024-06-02 23:34:37,094 INFO    MainThread:1807989 [wandb_init.py:init():561] calling init triggers
+2024-06-02 23:34:37,094 INFO    MainThread:1807989 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {}
+2024-06-02 23:34:37,095 INFO    MainThread:1807989 [wandb_init.py:init():611] starting backend
+2024-06-02 23:34:37,095 INFO    MainThread:1807989 [wandb_init.py:init():615] setting up manager
+2024-06-02 23:34:37,096 INFO    MainThread:1807989 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-06-02 23:34:37,098 INFO    MainThread:1807989 [wandb_init.py:init():623] backend started and connected
+2024-06-02 23:34:37,101 INFO    MainThread:1807989 [wandb_init.py:init():715] updated telemetry
+2024-06-02 23:34:37,278 INFO    MainThread:1807989 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-06-02 23:34:37,746 INFO    MainThread:1807989 [wandb_run.py:_on_init():2357] communicating current version
+2024-06-02 23:34:37,849 INFO    MainThread:1807989 [wandb_run.py:_on_init():2366] got version response upgrade_message: "wandb version 0.17.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-06-02 23:34:37,849 INFO    MainThread:1807989 [wandb_init.py:init():799] starting run threads in backend
+2024-06-02 23:34:40,360 INFO    MainThread:1807989 [wandb_run.py:_console_start():2335] atexit reg
+2024-06-02 23:34:40,360 INFO    MainThread:1807989 [wandb_run.py:_redirect():2190] redirect: wrap_raw
+2024-06-02 23:34:40,360 INFO    MainThread:1807989 [wandb_run.py:_redirect():2255] Wrapping output streams.
+2024-06-02 23:34:40,360 INFO    MainThread:1807989 [wandb_run.py:_redirect():2280] Redirects installed.
+2024-06-02 23:34:40,361 INFO    MainThread:1807989 [wandb_init.py:init():842] run started, returning control to user process
+2024-06-02 23:34:40,362 INFO    MainThread:1807989 [wandb_run.py:_config_callback():1347] config_cb None None {'pretrained_model_name_or_path': 'stabilityai/stable-diffusion-xl-base-1.0', 'pretrained_vae_model_name_or_path': None, 'lora_name_or_path': 'models/dreambooth_lora_sdxl_dog6_subject_2024-06-02_22-07-53', 'lora_name_or_path_2': './models/dreambooth_lora_sdxl_style3_sketch_2024-06-02_22-46-03', 'revision': None, 'dataset_name': None, 'dataset_config_name': None, 'instance_data_dir': './dataset/dreambooth-main/dataset/dog6', 'instance_data_dir_2': './dataset/styles/style3-sketch', 'cache_dir': None, 'image_column': 'image', 'caption_column': None, 'repeats': 1, 'instance_prompt': 'a photo of sks dog', 'instance_prompt_2': 'a cat in crt style', 'validation_prompt': 'a sks dog in crt style', 'num_validation_images': 4, 'validation_epochs': 10, 'output_dir': './models/ziplora_style3_dog6_2024-06-02_23-33-50', 'seed': 0, 'resolution': 1024, 'crops_coords_top_left_h': 0, 'crops_coords_top_left_w': 0, 'center_crop': False, 'train_text_encoder': False, 'train_batch_size': 1, 'sample_batch_size': 4, 'num_train_epochs': 15, 'max_train_steps': 100, 'checkpointing_steps': 500, 'checkpoints_total_limit': None, 'resume_from_checkpoint': None, 'gradient_accumulation_steps': 1, 'gradient_checkpointing': True, 'init_merger_value': 1.0, 'init_merger_value_2': 1.0, 'learning_rate': 5e-05, 'similarity_lambda': 0.01, 'text_encoder_lr': 5e-06, 'scale_lr': False, 'lr_scheduler': 'constant', 'snr_gamma': None, 'lr_warmup_steps': 0, 'lr_num_cycles': 1, 'lr_power': 1.0, 'dataloader_num_workers': 0, 'optimizer': 'AdamW', 'use_8bit_adam': True, 'adam_beta1': 0.9, 'adam_beta2': 0.999, 'prodigy_beta3': None, 'prodigy_decouple': True, 'adam_weight_decay': 0.0001, 'adam_weight_decay_text_encoder': 0.001, 'adam_epsilon': 1e-08, 'prodigy_use_bias_correction': True, 'prodigy_safeguard_warmup': True, 'max_grad_norm': 1.0, 'push_to_hub': False, 'hub_token': None, 'hub_model_id': None, 'logging_dir': 'logs', 'allow_tf32': False, 'report_to': 'wandb', 'mixed_precision': 'fp16', 'prior_generation_precision': None, 'local_rank': -1, 'enable_xformers_memory_efficient_attention': False, 'quick_release': False}
+2024-06-02 23:40:48,125 INFO    MainThread:1807989 [wandb_run.py:_finish():2064] finishing run salbowic-org/dreambooth-ziplora-sd-xl/1lnh2fhk
+2024-06-02 23:40:48,125 INFO    MainThread:1807989 [wandb_run.py:_atexit_cleanup():2304] got exitcode: 0
+2024-06-02 23:40:48,125 INFO    MainThread:1807989 [wandb_run.py:_restore():2287] restore
+2024-06-02 23:40:48,125 INFO    MainThread:1807989 [wandb_run.py:_restore():2293] restore done
+2024-06-02 23:40:54,586 INFO    MainThread:1807989 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2024-06-02 23:40:54,587 INFO    MainThread:1807989 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2024-06-02 23:40:54,592 INFO    MainThread:1807989 [wandb_run.py:_footer_sync_info():3895] logging synced files

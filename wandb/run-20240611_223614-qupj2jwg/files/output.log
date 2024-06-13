@@ -1,0 +1,135 @@
+06/11/2024 22:36:17 - INFO - __main__ - ***** Running training *****
+06/11/2024 22:36:17 - INFO - __main__ -   Num examples = 7
+06/11/2024 22:36:17 - INFO - __main__ -   Num batches each epoch = 7
+06/11/2024 22:36:17 - INFO - __main__ -   Num Epochs = 15
+06/11/2024 22:36:17 - INFO - __main__ -   Instantaneous batch size per device = 1
+06/11/2024 22:36:17 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 1
+06/11/2024 22:36:17 - INFO - __main__ -   Gradient Accumulation steps = 1
+06/11/2024 22:36:17 - INFO - __main__ -   Total optimization steps = 100
+
+
+
+
+
+
+Steps:   7%|▋         | 7/100 [00:17<03:38,  2.35s/it, loss=5.61, loss_1=0.00421, loss_2=0.00563, loss_3=5.6, lr=5e-5] 06/11/2024 22:36:35 - INFO - __main__ - Running validation...
+ Generating 4 images with prompt: a sbu dog in the crt style.
+{'feature_extractor', 'image_encoder'} was not found in config. Values will be initialized to default values.
+                                                                     Loaded tokenizer_2 as CLIPTokenizer from `tokenizer_2` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+{'sigma_min', 'timestep_type', 'sigma_max'} was not found in config. Values will be initialized to default values.
+Loaded scheduler as EulerDiscreteScheduler from `scheduler` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loaded tokenizer as CLIPTokenizer from `tokenizer` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00, 44.71it/s]
+{'variance_type', 'solver_type', 'lambda_min_clipped', 'algorithm_type', 'euler_at_final', 'use_lu_lambdas', 'lower_order_final', 'dynamic_thresholding_ratio', 'solver_order', 'thresholding'} was not found in config. Values will be initialized to default values.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Steps: 100%|██████████| 100/100 [04:45<00:00,  2.34s/it, loss=5.55, loss_1=0.00147, loss_2=0.00169, loss_3=5.54, lr=5e-5]Model weights saved in ./models/ziplora_style3_r256_dog6_r32_reversed_paths_2024-06-11_22-35-19/pytorch_lora_weights.safetensors
+{'feature_extractor', 'image_encoder'} was not found in config. Values will be initialized to default values.
+                                                                     Loaded tokenizer_2 as CLIPTokenizer from `tokenizer_2` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+{'reverse_transformer_layers_per_block', 'dropout', 'attention_type'} was not found in config. Values will be initialized to default values.
+Loaded unet as UNet2DConditionModel from `unet` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+                                                                             {'sigma_min', 'timestep_type', 'sigma_max'} was not found in config. Values will be initialized to default values.
+Loaded scheduler as EulerDiscreteScheduler from `scheduler` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loaded text_encoder_2 as CLIPTextModelWithProjection from `text_encoder_2` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+                                                                             Loaded tokenizer as CLIPTokenizer from `tokenizer` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loaded text_encoder as CLIPTextModel from `text_encoder` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loading pipeline components...: 100%|██████████| 7/7 [00:11<00:00,  1.58s/it]
+{'variance_type', 'solver_type', 'lambda_min_clipped', 'algorithm_type', 'euler_at_final', 'use_lu_lambdas', 'lower_order_final', 'dynamic_thresholding_ratio', 'solver_order', 'thresholding'} was not found in config. Values will be initialized to default values.
+
+100%|██████████| 25/25 [00:03<00:00,  7.79it/s]
+
+100%|██████████| 25/25 [00:03<00:00,  7.79it/s]
+
+100%|██████████| 25/25 [00:03<00:00,  7.79it/s]
+
+100%|██████████| 25/25 [00:03<00:00,  7.79it/s]

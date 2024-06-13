@@ -1,0 +1,237 @@
+06/12/2024 00:16:55 - INFO - __main__ - ***** Running training *****
+06/12/2024 00:16:55 - INFO - __main__ -   Num examples = 7
+06/12/2024 00:16:55 - INFO - __main__ -   Num batches each epoch = 7
+06/12/2024 00:16:55 - INFO - __main__ -   Num Epochs = 29
+06/12/2024 00:16:55 - INFO - __main__ -   Instantaneous batch size per device = 1
+06/12/2024 00:16:55 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 1
+06/12/2024 00:16:55 - INFO - __main__ -   Gradient Accumulation steps = 1
+06/12/2024 00:16:55 - INFO - __main__ -   Total optimization steps = 200
+
+
+
+
+
+
+Steps:   4%|▎         | 7/200 [00:17<07:32,  2.35s/it, loss=5.6, loss_1=0.00279, loss_2=0.00391, loss_3=5.6, lr=5e-5]06/12/2024 00:17:13 - INFO - __main__ - Running validation...
+ Generating 4 images with prompt: a sbu dog in the crt style.
+{'feature_extractor', 'image_encoder'} was not found in config. Values will be initialized to default values.
+                                                                     {'sigma_max', 'sigma_min', 'timestep_type'} was not found in config. Values will be initialized to default values.
+Loaded scheduler as EulerDiscreteScheduler from `scheduler` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loaded tokenizer_2 as CLIPTokenizer from `tokenizer_2` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loaded tokenizer as CLIPTokenizer from `tokenizer` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00, 61.53it/s]
+{'lambda_min_clipped', 'euler_at_final', 'dynamic_thresholding_ratio', 'use_lu_lambdas', 'variance_type', 'algorithm_type', 'solver_order', 'lower_order_final', 'thresholding', 'solver_type'} was not found in config. Values will be initialized to default values.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Steps: 100%|██████████| 200/200 [08:40<00:00,  2.35s/it, loss=5.49, loss_1=0.00203, loss_2=0.00314, loss_3=5.49, lr=5e-5]Model weights saved in ./models/ziplora_style3_r32_dog6_r256_2024-06-12_00-15-50/pytorch_lora_weights.safetensors
+{'feature_extractor', 'image_encoder'} was not found in config. Values will be initialized to default values.
+                                                                     {'attention_type', 'dropout', 'reverse_transformer_layers_per_block'} was not found in config. Values will be initialized to default values.
+Loaded unet as UNet2DConditionModel from `unet` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+                                                                             {'sigma_max', 'sigma_min', 'timestep_type'} was not found in config. Values will be initialized to default values.
+Loaded scheduler as EulerDiscreteScheduler from `scheduler` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loaded text_encoder_2 as CLIPTextModelWithProjection from `text_encoder_2` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+                                                                             Loaded tokenizer_2 as CLIPTokenizer from `tokenizer_2` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loaded text_encoder as CLIPTextModel from `text_encoder` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+                                                                             Loaded tokenizer as CLIPTokenizer from `tokenizer` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loading pipeline components...: 100%|██████████| 7/7 [00:12<00:00,  1.75s/it]
+{'lambda_min_clipped', 'euler_at_final', 'dynamic_thresholding_ratio', 'use_lu_lambdas', 'variance_type', 'algorithm_type', 'solver_order', 'lower_order_final', 'thresholding', 'solver_type'} was not found in config. Values will be initialized to default values.
+
+100%|██████████| 25/25 [00:03<00:00,  7.81it/s]
+
+100%|██████████| 25/25 [00:03<00:00,  7.82it/s]
+100%|██████████| 25/25 [00:03<00:00,  7.81it/s]
+
+
+100%|██████████| 25/25 [00:03<00:00,  7.80it/s]
