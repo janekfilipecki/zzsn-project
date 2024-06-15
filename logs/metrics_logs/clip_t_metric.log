@@ -1,3 +1,15 @@
 2024-05-26 17:23:46,985:INFO:CLIP_T Metric: 21.772446632385254
 2024-05-26 17:27:50,640:INFO:CLIP_T Metric: 19.86103630065918
 2024-05-26 17:29:07,530:INFO:CLIP_T Metric: 19.86103630065918
+2024-06-15 17:15:35,352:INFO:prompts: ./prompts/dog6_prompts.txt, generated directory: ./generated/dog6_no_ppl
+2024-06-15 17:15:35,382:INFO:CLIP_T Metric: 20.666904907226563
+2024-06-15 17:16:05,560:INFO:prompts: ./prompts/dog6_prompts.txt, generated directory: ./generated/dog6_maybe_fixed
+2024-06-15 17:16:05,567:INFO:CLIP_T Metric: 20.67454963684082
+2024-06-15 18:03:55,320:INFO:generated directory: ./generated/dog6_no_ppl
+2024-06-15 18:03:55,326:INFO:CLIP_T Metric: 20.743354263305665
+2024-06-15 18:04:18,670:INFO:generated directory: ./generated/dog6_maybe_fixed
+2024-06-15 18:04:18,671:INFO:CLIP_T Metric: 20.765616760253906
+2024-06-15 18:05:24,054:INFO:generated directory: ./generated/dog6_maybe_fixed
+2024-06-15 18:05:24,057:INFO:CLIP_T Metric: 20.11377197265625
+2024-06-15 18:06:24,565:INFO:generated directory: ./generated/dog6_no_ppl
+2024-06-15 18:06:24,568:INFO:CLIP_T Metric: 20.082502975463868

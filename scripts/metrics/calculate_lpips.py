@@ -39,6 +39,8 @@ def calculate_lpips_metric(original_dir, generated_dir, log_dir):
             lpips_scores.append(lpips_score.item())
 
     # Calculate the average LPIPS score
+    logging.info(f'original directory: {original_dir}, generated directory: {generated_dir}')
+    print(f'original directory: {original_dir}, generated directory: {generated_dir}')
     avg_lpips_score = sum(lpips_scores) / len(lpips_scores)
     logging.info(f'Average LPIPS Score: {avg_lpips_score}')
     print(f'Average LPIPS Score: {avg_lpips_score}')

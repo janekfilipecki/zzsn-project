@@ -1,1 +1,6 @@
 2024-05-26 17:52:40,513:INFO:CLIP_I Metric: 0.8990907609462738
+2024-06-15 15:18:40,079:INFO:CLIP_I Metric: 0.8593051700592041
+2024-06-15 15:44:26,126:INFO:original directory: ./dataset/dreambooth-main/dataset/dog6, generated directory: ./generated/dog6_no_ppl
+2024-06-15 15:44:26,139:INFO:CLIP_I Metric: 0.8593051700592041
+2024-06-15 15:45:28,060:INFO:original directory: ./dataset/dreambooth-main/dataset/dog6, generated directory: ./generated/dog6_maybe_fixed
+2024-06-15 15:45:28,070:INFO:CLIP_I Metric: 0.7858894557952881

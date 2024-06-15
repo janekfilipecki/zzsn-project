@@ -1,0 +1,8 @@
+/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgfilipeckijan/zzsn-project/scripts/metrics/calculate_clip_t.py", line 69, in <module>
+    calculate_clip(
+  File "/net/tscratch/people/plgfilipeckijan/zzsn-project/scripts/metrics/calculate_clip_t.py", line 45, in calculate_clip
+    raise ValueError(f"No matching image found for prompt: {prompt}")
+ValueError: No matching image found for prompt: a sks dog in the jungle

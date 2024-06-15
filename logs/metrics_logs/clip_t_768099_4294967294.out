@@ -1,0 +1,80 @@
+/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Unused or unrecognized kwargs: padding.
+It looks like you are trying to rescale already rescaled images. If the input images have pixel values between 0 and 1, set `do_rescale=False` to avoid rescaling them again.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+Unused or unrecognized kwargs: padding.
+sks_dog_in_a_purple_wizard_outfit
+sks_dog_wearing_a_rainbow_scarf
+sks_dog_in_the_snow
+sks_dog_in_a_firefighter_outfit
+sks_dog_with_a_city_in_the_background
+sks_dog_in_a_police_outfit
+sks_dog_with_a_blue_house_in_the_background
+sks_dog_in_a_chef_outfit
+sks_dog_wearing_pink_glasses
+wet_sks_dog
+sks_dog_on_top_of_a_wooden_floor
+sks_dog_wearing_a_yellow_shirt
+red_sks_dog
+sks_dog_wearing_a_red_hat
+sks_dog_on_the_beach
+sks_dog_on_top_of_pink_fabric
+shiny_sks_dog
+sks_dog_on_top_of_a_purple_rug_in_a_forest
+sks_dog_wearing_a_santa_hat
+sks_dog_in_the_jungle
+sks_dog_wearing_a_black_top_hat_and_a_monocle
+cube_shaped_sks_dog
+sks_dog_with_a_mountain_in_the_background
+purple_sks_dog
+sks_dog_on_a_cobblestone_street
+generated directory: ./generated/dog6_maybe_fixed
+Average CLIP_T Score: 20.765616760253906

@@ -46,6 +46,8 @@ def calculate_dino_metric(original_dir, generated_dir, model_name, log_dir):
 
     # Calculate the average similarity (DINO metric)
     dino_metric = sum(similarities) / len(similarities)
+    logging.info(f'original directory: {original_dir}, generated directory: {generated_dir}')
+    print(f'original directory: {original_dir}, generated directory: {generated_dir}')
     logging.info(f'DINO Metric: {dino_metric}')
     print(f'DINO Metric: {dino_metric}')
 

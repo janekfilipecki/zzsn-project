@@ -1,2 +1,6 @@
 2024-05-26 18:15:49,262:INFO:Average LPIPS Score: 0.47963646054267883
 2024-05-26 18:21:09,233:INFO:Average LPIPS Score: 0.47963646054267883
+2024-06-15 15:46:28,109:INFO:original directory: ./dataset/dreambooth-main/dataset/dog6, generated directory: ./generated/dog6_maybe_fixed
+2024-06-15 15:46:28,113:INFO:Average LPIPS Score: 0.5725664737224578
+2024-06-15 15:46:58,196:INFO:original directory: ./dataset/dreambooth-main/dataset/dog6, generated directory: ./generated/dog6_no_ppl
+2024-06-15 15:46:58,206:INFO:Average LPIPS Score: 0.5233510258197784

@@ -10,7 +10,7 @@
 #SBATCH --output=./logs/metrics_logs/lpips_%j_%a.out
 
 export ORIGINAL_DIR="./dataset/dreambooth-main/dataset/dog6"
-export GENERATED_DIR="./generated/dog6"
+export GENERATED_DIR="./generated/dog6_no_ppl"
 export LOG_DIR="./logs/metrics_logs"
 export HF_HOME="/net/tscratch/people/plgfilipeckijan/.cache/huggingface"
 

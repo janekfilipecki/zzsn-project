@@ -45,8 +45,11 @@ def calculate_clip_metric(original_dir, generated_dir, model_name, log_dir):
 
     # Calculate the average similarity (CLIP metric)
     clip_metric = sum(similarities) / len(similarities)
+    logging.info(f'original directory: {original_dir}, generated directory: {generated_dir}')
+    print(f'original directory: {original_dir}, generated directory: {generated_dir}')
     logging.info(f'CLIP_I Metric: {clip_metric}')
     print(f'CLIP_I Metric: {clip_metric}')
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Calculate the CLIP metric for generated images.")

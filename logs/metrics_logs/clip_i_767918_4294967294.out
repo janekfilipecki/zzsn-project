@@ -1,0 +1,4 @@
+/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+original directory: ./dataset/dreambooth-main/dataset/dog6, generated directory: ./generated/dog6_no_ppl
+CLIP_I Metric: 0.8593051700592041

@@ -1,0 +1,33 @@
+/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+sks_dog_on_top_of_a_purple_rug_in_a_forest_0
+sks_dog_in_a_police_outfit_0
+sks_dog_wearing_a_red_hat_0
+sks_dog_in_a_firefighter_outfit_0
+wet_sks_dog_0
+cube_shaped_sks_dog_0
+red_sks_dog_0
+sks_dog_wearing_pink_glasses_0
+sks_dog_on_the_beach_0
+sks_dog_on_top_of_a_wooden_floor_0
+sks_dog_wearing_a_black_top_hat_and_a_monocle_0
+sks_dog_on_a_cobblestone_street_0
+sks_dog_with_a_city_in_the_background_0
+shiny_sks_dog_0
+sks_dog_with_a_mountain_in_the_background_0
+sks_dog_wearing_a_rainbow_scarf_0
+purple_sks_dog_0
+sks_dog_in_a_purple_wizard_outfit_0
+sks_dog_in_the_jungle_0
+sks_dog_in_a_chef_outfit_0
+sks_dog_on_top_of_pink_fabric_0
+sks_dog_with_a_blue_house_in_the_background_0
+sks_dog_wearing_a_santa_hat_0
+sks_dog_wearing_a_yellow_shirt_0
+sks_dog_in_the_snow_0
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgfilipeckijan/zzsn-project/scripts/metrics/calculate_clip_t.py", line 72, in <module>
+    calculate_clip(
+  File "/net/tscratch/people/plgfilipeckijan/zzsn-project/scripts/metrics/calculate_clip_t.py", line 48, in calculate_clip
+    raise ValueError(f"No matching image found for prompt: {prompt}")
+ValueError: No matching image found for prompt: a sks dog in the jungle

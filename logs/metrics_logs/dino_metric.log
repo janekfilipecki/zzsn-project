@@ -1,3 +1,7 @@
 2024-05-25 16:28:31,229:INFO:DINO Metric: 0.7893837809562683
 2024-05-26 15:43:29,593:INFO:DINO Metric: 0.7889530897140503
 2024-06-11 22:49:31,610:INFO:DINO Metric: 0.5242171506086986
+2024-06-15 15:46:29,488:INFO:original directory: ./dataset/dreambooth-main/dataset/dog6, generated directory: ./generated/dog6_maybe_fixed
+2024-06-15 15:46:29,495:INFO:DINO Metric: 0.5383351807594299
+2024-06-15 15:46:57,126:INFO:original directory: ./dataset/dreambooth-main/dataset/dog6, generated directory: ./generated/dog6_no_ppl
+2024-06-15 15:46:57,132:INFO:DINO Metric: 0.7561128454208375
