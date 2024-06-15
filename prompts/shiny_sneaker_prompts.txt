@@ -1,25 +1,25 @@
-a shiny_sneaker sneaker in the jungle
-a shiny_sneaker sneaker in the snow
-a shiny_sneaker sneaker on the beach
-a shiny_sneaker sneaker on a cobblestone street
-a shiny_sneaker sneaker on top of pink fabric
-a shiny_sneaker sneaker on top of a wooden floor
-a shiny_sneaker sneaker with a city in the background
-a shiny_sneaker sneaker with a mountain in the background
-a shiny_sneaker sneaker with a blue house in the background
-a shiny_sneaker sneaker on top of a purple rug in a forest
-a shiny_sneaker sneaker with a wheat field in the background
-a shiny_sneaker sneaker with a tree and autumn leaves in the background
-a shiny_sneaker sneaker with the Eiffel Tower in the background
-a shiny_sneaker sneaker floating on top of water
-a shiny_sneaker sneaker floating in an ocean of milk
-a shiny_sneaker sneaker on top of green grass with sunflowers around it
-a shiny_sneaker sneaker on top of a mirror
-a shiny_sneaker sneaker on top of the sidewalk in a crowded street
-a shiny_sneaker sneaker on top of a dirt road
-a shiny_sneaker sneaker on top of a white rug
-a red shiny_sneaker sneaker
-a purple shiny_sneaker sneaker
-a shiny shiny_sneaker sneaker
-a wet shiny_sneaker sneaker
-a cube shaped shiny_sneaker sneaker
+a sks sneaker in the jungle
+a sks sneaker in the snow
+a sks sneaker on the beach
+a sks sneaker on a cobblestone street
+a sks sneaker on top of pink fabric
+a sks sneaker on top of a wooden floor
+a sks sneaker with a city in the background
+a sks sneaker with a mountain in the background
+a sks sneaker with a blue house in the background
+a sks sneaker on top of a purple rug in a forest
+a sks sneaker with a wheat field in the background
+a sks sneaker with a tree and autumn leaves in the background
+a sks sneaker with the Eiffel Tower in the background
+a sks sneaker floating on top of water
+a sks sneaker floating in an ocean of milk
+a sks sneaker on top of green grass with sunflowers around it
+a sks sneaker on top of a mirror
+a sks sneaker on top of the sidewalk in a crowded street
+a sks sneaker on top of a dirt road
+a sks sneaker on top of a white rug
+a red sks sneaker
+a purple sks sneaker
+a shiny sks sneaker
+a wet sks sneaker
+a cube shaped sks sneaker

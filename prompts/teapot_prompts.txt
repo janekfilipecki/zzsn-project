@@ -1,25 +1,25 @@
-a teapot teapot in the jungle
-a teapot teapot in the snow
-a teapot teapot on the beach
-a teapot teapot on a cobblestone street
-a teapot teapot on top of pink fabric
-a teapot teapot on top of a wooden floor
-a teapot teapot with a city in the background
-a teapot teapot with a mountain in the background
-a teapot teapot with a blue house in the background
-a teapot teapot on top of a purple rug in a forest
-a teapot teapot with a wheat field in the background
-a teapot teapot with a tree and autumn leaves in the background
-a teapot teapot with the Eiffel Tower in the background
-a teapot teapot floating on top of water
-a teapot teapot floating in an ocean of milk
-a teapot teapot on top of green grass with sunflowers around it
-a teapot teapot on top of a mirror
-a teapot teapot on top of the sidewalk in a crowded street
-a teapot teapot on top of a dirt road
-a teapot teapot on top of a white rug
-a red teapot teapot
-a purple teapot teapot
-a shiny teapot teapot
-a wet teapot teapot
-a cube shaped teapot teapot
+a sks teapot in the jungle
+a sks teapot in the snow
+a sks teapot on the beach
+a sks teapot on a cobblestone street
+a sks teapot on top of pink fabric
+a sks teapot on top of a wooden floor
+a sks teapot with a city in the background
+a sks teapot with a mountain in the background
+a sks teapot with a blue house in the background
+a sks teapot on top of a purple rug in a forest
+a sks teapot with a wheat field in the background
+a sks teapot with a tree and autumn leaves in the background
+a sks teapot with the Eiffel Tower in the background
+a sks teapot floating on top of water
+a sks teapot floating in an ocean of milk
+a sks teapot on top of green grass with sunflowers around it
+a sks teapot on top of a mirror
+a sks teapot on top of the sidewalk in a crowded street
+a sks teapot on top of a dirt road
+a sks teapot on top of a white rug
+a red sks teapot
+a purple sks teapot
+a shiny sks teapot
+a wet sks teapot
+a cube shaped sks teapot

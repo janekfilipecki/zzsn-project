@@ -1,25 +1,25 @@
-a monster_toy toy in the jungle
-a monster_toy toy in the snow
-a monster_toy toy on the beach
-a monster_toy toy on a cobblestone street
-a monster_toy toy on top of pink fabric
-a monster_toy toy on top of a wooden floor
-a monster_toy toy with a city in the background
-a monster_toy toy with a mountain in the background
-a monster_toy toy with a blue house in the background
-a monster_toy toy on top of a purple rug in a forest
-a monster_toy toy wearing a red hat
-a monster_toy toy wearing a santa hat
-a monster_toy toy wearing a rainbow scarf
-a monster_toy toy wearing a black top hat and a monocle
-a monster_toy toy in a chef outfit
-a monster_toy toy in a firefighter outfit
-a monster_toy toy in a police outfit
-a monster_toy toy wearing pink glasses
-a monster_toy toy wearing a yellow shirt
-a monster_toy toy in a purple wizard outfit
-a red monster_toy toy
-a purple monster_toy toy
-a shiny monster_toy toy
-a wet monster_toy toy
-a cube shaped monster_toy toy
+a sks toy in the jungle
+a sks toy in the snow
+a sks toy on the beach
+a sks toy on a cobblestone street
+a sks toy on top of pink fabric
+a sks toy on top of a wooden floor
+a sks toy with a city in the background
+a sks toy with a mountain in the background
+a sks toy with a blue house in the background
+a sks toy on top of a purple rug in a forest
+a sks toy wearing a red hat
+a sks toy wearing a santa hat
+a sks toy wearing a rainbow scarf
+a sks toy wearing a black top hat and a monocle
+a sks toy in a chef outfit
+a sks toy in a firefighter outfit
+a sks toy in a police outfit
+a sks toy wearing pink glasses
+a sks toy wearing a yellow shirt
+a sks toy in a purple wizard outfit
+a red sks toy
+a purple sks toy
+a shiny sks toy
+a wet sks toy
+a cube shaped sks toy

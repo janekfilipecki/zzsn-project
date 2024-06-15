@@ -1,25 +1,25 @@
-a wolf_plushie stuffed animal in the jungle
-a wolf_plushie stuffed animal in the snow
-a wolf_plushie stuffed animal on the beach
-a wolf_plushie stuffed animal on a cobblestone street
-a wolf_plushie stuffed animal on top of pink fabric
-a wolf_plushie stuffed animal on top of a wooden floor
-a wolf_plushie stuffed animal with a city in the background
-a wolf_plushie stuffed animal with a mountain in the background
-a wolf_plushie stuffed animal with a blue house in the background
-a wolf_plushie stuffed animal on top of a purple rug in a forest
-a wolf_plushie stuffed animal wearing a red hat
-a wolf_plushie stuffed animal wearing a santa hat
-a wolf_plushie stuffed animal wearing a rainbow scarf
-a wolf_plushie stuffed animal wearing a black top hat and a monocle
-a wolf_plushie stuffed animal in a chef outfit
-a wolf_plushie stuffed animal in a firefighter outfit
-a wolf_plushie stuffed animal in a police outfit
-a wolf_plushie stuffed animal wearing pink glasses
-a wolf_plushie stuffed animal wearing a yellow shirt
-a wolf_plushie stuffed animal in a purple wizard outfit
-a red wolf_plushie stuffed animal
-a purple wolf_plushie stuffed animal
-a shiny wolf_plushie stuffed animal
-a wet wolf_plushie stuffed animal
-a cube shaped wolf_plushie stuffed animal
+a sks stuffed animal in the jungle
+a sks stuffed animal in the snow
+a sks stuffed animal on the beach
+a sks stuffed animal on a cobblestone street
+a sks stuffed animal on top of pink fabric
+a sks stuffed animal on top of a wooden floor
+a sks stuffed animal with a city in the background
+a sks stuffed animal with a mountain in the background
+a sks stuffed animal with a blue house in the background
+a sks stuffed animal on top of a purple rug in a forest
+a sks stuffed animal wearing a red hat
+a sks stuffed animal wearing a santa hat
+a sks stuffed animal wearing a rainbow scarf
+a sks stuffed animal wearing a black top hat and a monocle
+a sks stuffed animal in a chef outfit
+a sks stuffed animal in a firefighter outfit
+a sks stuffed animal in a police outfit
+a sks stuffed animal wearing pink glasses
+a sks stuffed animal wearing a yellow shirt
+a sks stuffed animal in a purple wizard outfit
+a red sks stuffed animal
+a purple sks stuffed animal
+a shiny sks stuffed animal
+a wet sks stuffed animal
+a cube shaped sks stuffed animal
