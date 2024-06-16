@@ -7,11 +7,11 @@
 #SBATCH --gres=gpu:1
 #SBATCH --mem=40G
 #SBATCH --nodes=1
-#SBATCH --output=./logs/metrics_logs/clip_i_%j_%a.out
+#SBATCH --output=./logs/metrics_logs/can_no_ppl_no_target/clip_i_%j_%a.out
 
 export MODEL_NAME="openai/clip-vit-base-patch32"
-export ORIGINAL_DIR="./dataset/dreambooth-main/dataset/dog6"
-export GENERATED_DIR="./generated/dog6_maybe_fixed"
+export ORIGINAL_DIR="./dataset/dreambooth_generated/can"
+export GENERATED_DIR="./generated/can_no_ppl_no_target"
 export LOG_DIR="./logs/metrics_logs"
 export HF_HOME="/net/tscratch/people/plgfilipeckijan/.cache/huggingface"
 

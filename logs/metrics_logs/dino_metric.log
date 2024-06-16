@@ -5,3 +5,17 @@
 2024-06-15 15:46:29,495:INFO:DINO Metric: 0.5383351807594299
 2024-06-15 15:46:57,126:INFO:original directory: ./dataset/dreambooth-main/dataset/dog6, generated directory: ./generated/dog6_no_ppl
 2024-06-15 15:46:57,132:INFO:DINO Metric: 0.7561128454208375
+2024-06-16 14:52:12,391:INFO:original directory: ./dataset/dreambooth-main/dataset/can, generated directory: ./generated/can_no_ppl
+2024-06-16 14:52:12,396:INFO:DINO Metric: 0.45515487937877575
+2024-06-16 14:53:43,327:INFO:original directory: ./dataset/dreambooth-main/dataset/can, generated directory: ./generated/can_3000
+2024-06-16 14:53:43,334:INFO:DINO Metric: 0.3586353272595443
+2024-06-16 16:01:33,824:INFO:original directory: ./dataset/dreambooth-main/dataset/can, generated directory: ./generated/can_no_ppl_no_target
+2024-06-16 16:01:33,829:INFO:DINO Metric: 0.6135806381702423
+2024-06-16 16:02:34,073:INFO:original directory: ./dataset/dreambooth-main/dataset/can, generated directory: ./generated/can_3000_no_target
+2024-06-16 16:02:34,078:INFO:DINO Metric: 0.2718155425352355
+2024-06-16 16:27:43,360:INFO:original directory: ./dataset/dreambooth_generated/can, generated directory: ./generated/can_3000_no_target
+2024-06-16 16:27:43,366:INFO:DINO Metric: 0.2969407125711441
+2024-06-16 16:29:06,572:INFO:original directory: ./dataset/dreambooth_generated/can, generated directory: ./generated/can_3000_no_target
+2024-06-16 16:29:06,578:INFO:DINO Metric: 0.3473328447495587
+2024-06-16 16:29:43,597:INFO:original directory: ./dataset/dreambooth_generated/can, generated directory: ./generated/can_no_ppl_no_target
+2024-06-16 16:29:43,608:INFO:DINO Metric: 0.41662482379842547

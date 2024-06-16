@@ -4,3 +4,19 @@
 2024-06-15 15:46:28,113:INFO:Average LPIPS Score: 0.5725664737224578
 2024-06-15 15:46:58,196:INFO:original directory: ./dataset/dreambooth-main/dataset/dog6, generated directory: ./generated/dog6_no_ppl
 2024-06-15 15:46:58,206:INFO:Average LPIPS Score: 0.5233510258197784
+2024-06-16 14:52:16,944:INFO:original directory: ./dataset/dreambooth-main/dataset/can, generated directory: ./generated/can_no_ppl
+2024-06-16 14:52:16,951:INFO:Average LPIPS Score: 0.5532850774129232
+2024-06-16 14:54:12,142:INFO:original directory: ./dataset/dreambooth-main/dataset/can, generated directory: ./generated/can_3000
+2024-06-16 14:54:12,149:INFO:Average LPIPS Score: 0.5869482988119126
+2024-06-16 16:01:36,212:INFO:original directory: ./dataset/dreambooth-main/dataset/can, generated directory: ./generated/can_no_ppl_no_target
+2024-06-16 16:01:36,216:INFO:Average LPIPS Score: 0.5373648911714554
+2024-06-16 16:02:40,323:INFO:original directory: ./dataset/dreambooth-main/dataset/can, generated directory: ./generated/can_3000_no_target
+2024-06-16 16:02:40,325:INFO:Average LPIPS Score: 0.6046385188897451
+2024-06-16 16:28:20,260:INFO:original directory: ./dataset/dreambooth_generated/can, generated directory: ./generated/can_3000_no_target
+2024-06-16 16:28:20,266:INFO:Average LPIPS Score: 0.6160293361246586
+2024-06-16 16:29:22,740:INFO:original directory: ./dataset/dreambooth_generated/can, generated directory: ./generated/can_no_ppl_no_target
+2024-06-16 16:29:22,746:INFO:Average LPIPS Score: 0.5361391414105893
+2024-06-16 16:29:55,679:INFO:original directory: ./dataset/dreambooth_generated/can, generated directory: ./generated/can_no_ppl_no_target
+2024-06-16 16:29:55,689:INFO:Average LPIPS Score: 0.5361391414105893
+2024-06-16 16:32:56,729:INFO:original directory: ./dataset/dreambooth_generated/can, generated directory: ./generated/can_3000_no_target
+2024-06-16 16:32:56,742:INFO:Average LPIPS Score: 0.6160293361246586

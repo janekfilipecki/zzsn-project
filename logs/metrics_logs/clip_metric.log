@@ -4,3 +4,15 @@
 2024-06-15 15:44:26,139:INFO:CLIP_I Metric: 0.8593051700592041
 2024-06-15 15:45:28,060:INFO:original directory: ./dataset/dreambooth-main/dataset/dog6, generated directory: ./generated/dog6_maybe_fixed
 2024-06-15 15:45:28,070:INFO:CLIP_I Metric: 0.7858894557952881
+2024-06-16 14:51:14,612:INFO:original directory: ./dataset/dreambooth-main/dataset/can, generated directory: ./generated/can_no_ppl
+2024-06-16 14:51:14,618:INFO:CLIP_I Metric: 0.6416745732227961
+2024-06-16 14:53:06,561:INFO:original directory: ./dataset/dreambooth-main/dataset/can, generated directory: ./generated/can_3000
+2024-06-16 14:53:06,568:INFO:CLIP_I Metric: 0.6197436930735906
+2024-06-16 16:00:44,586:INFO:original directory: ./dataset/dreambooth-main/dataset/can, generated directory: ./generated/can_no_ppl_no_target
+2024-06-16 16:00:44,591:INFO:CLIP_I Metric: 0.7590492745240529
+2024-06-16 16:02:19,838:INFO:original directory: ./dataset/dreambooth-main/dataset/can, generated directory: ./generated/can_3000_no_target
+2024-06-16 16:02:19,843:INFO:CLIP_I Metric: 0.6073917080958684
+2024-06-16 16:28:26,970:INFO:original directory: ./dataset/dreambooth_generated/can, generated directory: ./generated/can_3000_no_target
+2024-06-16 16:28:26,976:INFO:CLIP_I Metric: 0.7193047036528587
+2024-06-16 16:28:50,002:INFO:original directory: ./dataset/dreambooth_generated/can, generated directory: ./generated/can_no_ppl_no_target
+2024-06-16 16:28:50,006:INFO:CLIP_I Metric: 0.7041957947611809

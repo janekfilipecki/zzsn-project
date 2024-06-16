@@ -1,0 +1,19 @@
+/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loading pipeline components...:  14%|█▍        | 1/7 [00:05<00:32,  5.48s/it]Loading pipeline components...:  29%|██▊       | 2/7 [00:05<00:11,  2.33s/it]Loading pipeline components...:  43%|████▎     | 3/7 [00:09<00:11,  2.83s/it]Loading pipeline components...:  57%|█████▋    | 4/7 [01:23<01:32, 30.95s/it]Loading pipeline components...:  86%|████████▌ | 6/7 [01:23<00:14, 14.63s/it]Loading pipeline components...: 100%|██████████| 7/7 [01:45<00:00, 16.74s/it]Loading pipeline components...: 100%|██████████| 7/7 [01:45<00:00, 15.10s/it]
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgfilipeckijan/zzsn-project/scripts/generate/generate_sdxl.py", line 40, in <module>
+    pipe.load_lora_weights(lora_weights_path)
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/diffusers/loaders/lora.py", line 1341, in load_lora_weights
+    state_dict, network_alphas = self.lora_state_dict(
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 119, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/diffusers/loaders/lora.py", line 242, in lora_state_dict
+    weight_name = cls._best_guess_weight_name(
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/diffusers/loaders/lora.py", line 325, in _best_guess_weight_name
+    files_in_repo = model_info(pretrained_model_name_or_path_or_dict).siblings
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 111, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/net/tscratch/people/plgfilipeckijan/.conda/envs/zzsn_project_env/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 159, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.utils._validators.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'models/dreambooth_lora_sdxl_wolf_plushie_2024-06-15_20-40-25/pytorch_lora_weights.safetensorss'. Use `repo_type` argument if needed.

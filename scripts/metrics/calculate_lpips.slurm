@@ -7,10 +7,10 @@
 #SBATCH --gres=gpu:1
 #SBATCH --mem=40G
 #SBATCH --nodes=1
-#SBATCH --output=./logs/metrics_logs/lpips_%j_%a.out
+#SBATCH --output=./logs/metrics_logs/can_3000_no_target/lpips_%j_%a.out
 
-export ORIGINAL_DIR="./dataset/dreambooth-main/dataset/dog6"
-export GENERATED_DIR="./generated/dog6_no_ppl"
+export ORIGINAL_DIR="./dataset/dreambooth_generated/can"
+export GENERATED_DIR="./generated/can_3000_no_target"
 export LOG_DIR="./logs/metrics_logs"
 export HF_HOME="/net/tscratch/people/plgfilipeckijan/.cache/huggingface"
 
